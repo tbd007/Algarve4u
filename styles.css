@@ -1,0 +1,756 @@
+body {
+  font-family: "Montserrat" !important;
+  overflow-x: hidden;
+  background: #cee3f8;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+header {
+  background: linear-gradient(
+      to top,
+      rgba(34, 40, 68, 0.682),
+      rgba(16, 17, 37, 0.805)
+    ),
+    url("beach-3946627_1920.jpg");
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+h1 {
+  color: white;
+  font-weight: 600 !important;
+  font-family: "Montserrat Alternates";
+}
+
+h4 {
+  color: white;
+  font-size: 16px !important;
+  width: 60%;
+  line-height: 1.25em;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  align-items: center;
+  top: 2%;
+  right: 2%;
+}
+
+.fas,
+.fa-search {
+  margin: 0px 0px 0px 8px !important;
+  font-size: 20px;
+  color: yellow;
+}
+
+#langbtn {
+  background: transparent;
+  border: none;
+}
+
+.mainbutton {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: white;
+  margin-top: 5px;
+}
+
+.mainbuttondark {
+  border-radius: 50px;
+  background: #51c2c2;
+  box-shadow: inset 10px 10px 35px #1d3c4e, inset -17px -17px 35px #4dc9c9;
+  color: white;
+  border: 2px solid rgb(70, 84, 94);
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-weight: 500 !important;
+}
+
+.searchbar {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: rgba(42, 56, 85, 0.788);
+  padding: 25px;
+  border-radius: 75px;
+  box-shadow: inset 3px 3px 10px rgba(255, 255, 255, 0.401);
+}
+
+.searchbar2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: rgba(31, 42, 63, 0.988);
+  padding: 25px;
+  border-radius: 0px;
+}
+
+.searchbar2 > input {
+  margin: 0px;
+  height: 30px;
+  background: rgb(254, 255, 228);
+  border-radius: 0px;
+  border: none;
+  text-align: center;
+  width: 150px;
+  border-right: 0.5px solid rgb(182, 181, 181);
+  cursor: pointer;
+  font-size: 12px !important;
+}
+
+.searchbar > input {
+  margin: 0px;
+  height: 37px;
+  background: rgb(254, 255, 228);
+  border-radius: 0px;
+  border: none;
+  text-align: center;
+  width: 190px;
+  border-right: 0.5px solid rgb(182, 181, 181);
+  cursor: pointer;
+  font-size: 15px !important;
+}
+
+.searchbar > button,
+.searchbar2 > button {
+  background: transparent !important;
+  border: none;
+  width: auto;
+  height: auto;
+  padding: 5px;
+}
+
+.plainbtn {
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 10px rgba(255, 255, 255, 0.553);
+  color: white;
+  margin-right: 2px !important;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+.intro {
+  width: 60%;
+  margin: 60px auto 30px auto;
+  text-align: center;
+  height: 200px;
+}
+
+#introtxt {
+  margin-top: 50px;
+}
+
+.bookings {
+  height: auto;
+  margin: 90px auto !important;
+  text-align: justify;
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 1fr 1fr;
+  background-position: bottom;
+  width: 96%;
+  padding: 20px;
+}
+
+#introimage > img {
+  height: 360px;
+  width: auto;
+  margin-top: -40px;
+}
+
+#introimage > img:hover {
+  transform: scale(1.2);
+}
+
+.bookings_search {
+  background: #24663f;
+  color: rgba(255, 255, 255, 0.849);
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+.bookings_search > h6 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.houses {
+  overflow-x: scroll;
+  height: auto;
+  display: flex;
+  width: 96%;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.card {
+  min-width: 350px !important;
+  margin: 15px;
+  border-radius: 40px !important;
+  border: none !important;
+  position: relative;
+  border-radius: 26px;
+  background: linear-gradient(145deg, #e5e6e6, #ffffff);
+  box-shadow: 20px 20px 70px #76e6e669, -20px -20px 70px #ffffff;
+}
+
+.card-result {
+  min-width: 250px !important;
+  margin: 15px;
+  border-radius: 40px !important;
+  border: none !important;
+  position: relative;
+  background: linear-gradient(rgb(248, 239, 134), white);
+  border-radius: 26px;
+  background: linear-gradient(145deg, #e0e1e1, #ffffff);
+  box-shadow: 20px 20px 70px #c7c8c8, -20px -20px 70px #ffffff;
+  display: flex;
+}
+
+.card-result > .card-body {
+  margin-top: 20px;
+}
+
+.card-result > img {
+  width: 400px;
+  height: 250px;
+  object-fit: fill;
+  border-radius: 60px 60px 60px 0px;
+}
+
+.card > img {
+  min-width: 300px !important;
+  object-fit: fill;
+  border-radius: 60px 60px 60px 0px;
+}
+
+.card-title {
+  font-weight: 600 !important;
+  font-size: 18px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  width: 100%;
+}
+
+#Rating {
+  border-radius: 5px 10px;
+  color: rgb(43, 43, 70);
+  padding: 5px 7px;
+  background: #fcff52;
+  border: 1px solid white;
+  position: absolute;
+  top: 4%;
+  right: 8%;
+}
+
+#Price {
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: bolder;
+}
+
+li {
+  list-style-type: none;
+}
+
+.about {
+  background: linear-gradient(340deg, rgb(252, 248, 139), white, white);
+  margin-top: 100px;
+  display: flex;
+}
+
+#about_img {
+  margin: 0px;
+}
+
+#about_us {
+  width: 500px;
+  text-align: justify;
+  margin: 50px auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around !important;
+  width: 100vw;
+  padding: 45px 0px !important;
+  height: 150px !important;
+}
+
+a {
+  font-weight: 300 !important;
+  font-size: 13px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.houses::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.houses {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.footer {
+  height: 80px;
+  box-shadow: 3px 3px 10px gray;
+  width: 100%;
+  margin-top: 100px;
+  background: #12212b;
+  padding: 20px;
+  color: white;
+}
+
+.maincontainer {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 55% 45%;
+}
+
+h2 {
+  color: #142530;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  margin-bottom: 0;
+  font-family: "Montserrat";
+}
+
+h3 {
+  color: #42a02a;
+  font-size: 24px !important;
+  font-family: "Montserrat Alternates";
+  font-weight: 600 !important;
+}
+
+#overview > h3 {
+  color: #12212b;
+  font-weight: 600;
+}
+
+/* Search Results*/
+#buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#buttons > button {
+  font-size: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  background: #49acac;
+  box-shadow: inset 10px 10px 35px #132733, inset -17px -17px 35px #2b7075;
+}
+
+#buttons > p {
+  color: #12212b !important;
+}
+
+#houselist {
+  height: 150vh;
+  overflow-y: scroll;
+}
+
+iframe {
+  height: 150vh;
+}
+
+/*Details*/
+
+#main_img {
+  object-fit: fill;
+  width: 100%;
+}
+
+#img_dets {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.info_dets {
+  padding: 20px;
+  width: 90%;
+  margin: 30px auto;
+  box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.849);
+}
+
+.dets_img {
+  height: 250px;
+  width: 300px;
+  object-fit: fill;
+}
+
+.dets_img:hover {
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+}
+
+.infos {
+  display: flex;
+  margin: 20px auto;
+}
+
+.house_dets {
+  padding: 20px;
+}
+
+i {
+  color: #12212b;
+  margin-right: 15px;
+  margin-top: -17px;
+  color: #fc8617;
+}
+
+.amenities {
+  padding: 15px;
+}
+
+.owner_img {
+  object-fit: fill;
+}
+
+.Rating2 {
+  border-radius: 5px;
+  color: white;
+  padding: 5px 7px;
+  background: #5f99cf;
+  width: 40px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+h5 {
+  font-weight: 600 !important;
+}
+
+.calc {
+  padding: 0px 20px;
+  margin-left: 50px;
+}
+
+/*Kalender*/
+
+.calendar {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 2px 2px 5px gray;
+  background: rgb(165, 215, 235);
+}
+
+#wp-calendar {
+  color: rgb(88, 195, 209);
+  font-size: 12px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
+}
+
+#wp-calendar a {
+  color: #467b89;
+}
+
+#wp-calendar caption {
+  background: #12212b;
+  color: #e0e0e0;
+  font-size: 14px;
+  padding: 10px 0;
+  text-align: center;
+  text-shadow: 0 -1px 0 #000;
+  -webkit-box-shadow: inset 0 1px 0 #484848, 0 -1px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 1px 0 #484848, 0 -1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 0 #484848, 0 -1px 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid #373737;
+  z-index: -99;
+}
+
+#wp-calendar thead th {
+  font-size: 10px;
+  padding: 5px 5px 5px 10px;
+  color: #666;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #bbbbbb;
+  background: #f7f7f7;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f7f7f7),
+    to(#f1f1f1)
+  );
+  background: -moz-linear-gradient(top, #f7f7f7, #f1f1f1);
+}
+
+#wp-calendar tbody td {
+  color: #666;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid;
+  border-color: #fff #bbbbbb #bbbbbb #fff;
+  background: #ededed;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ededed),
+    to(#dedede)
+  );
+  background: -moz-linear-gradient(top, #ededed, #dedede);
+}
+
+#wp-calendar tbody td.pad {
+  background: #f5f5f5;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f5f5f5),
+    to(#ececec)
+  );
+  background: -moz-linear-gradient(top, #f5f5f5, #ececec);
+}
+
+#wp-calendar tfoot {
+  color: #e0e0e0;
+  font-size: 12px;
+  text-align: center;
+}
+
+#wp-calendar tfoot tr {
+  background: #f5f5f5;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f5f5f5),
+    to(#ececec)
+  );
+  background: -moz-linear-gradient(top, #f5f5f5, #ececec);
+}
+
+#wp-calendar tfoot td {
+  padding: 10px 10px;
+}
+
+#wp-calendar tfoot a {
+  color: #666;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+#wp-calendar tfoot td#prev {
+  text-align: left;
+}
+
+#wp-calendar tfoot td#next {
+  text-align: right;
+}
+
+#wp-calendar #selected {
+  color: #fff;
+  border: 2px solid #cfebf3;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  background: #6eafbf;
+  background: -moz-radial-gradient(
+    50% 50% 0deg,
+    ellipse cover,
+    #6eafbf,
+    #569eb1
+  );
+  background: -webkit-gradient(
+    radial,
+    50% 50%,
+    0,
+    50% 50%,
+    20,
+    from(#6eafbf),
+    to(#569eb1)
+  );
+}
+
+#wp-calendar .occupied {
+  background: rgb(214, 26, 26);
+  color: rgb(216, 215, 215);
+}
+
+/* QUERIES */
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .searchbar,
+  #buttons {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    height: auto !important;
+    padding: 20px !important;
+  }
+
+  input,
+  .form-control-sm {
+    margin-bottom: 5px;
+    width: 60%;
+  }
+
+  header {
+    width: 100% !important;
+    height: 200px;
+    background-image: url("sea-2726056__340.jpg");
+  }
+
+  .nav {
+    top: 1%;
+    right: 3%;
+  }
+
+  .nav > button,
+  #buttons > button {
+    font-size: 12px !important;
+    height: 30px;
+    margin: 5px;
+  }
+
+  .footer {
+    display: flex !important;
+    font-size: 10px;
+    flex-direction: column !important;
+    align-items: center !important;
+    height: auto !important;
+  }
+
+  .bookings {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    background: #12212b;
+    padding: 0px !important;
+    width: 100%;
+    margin: 0;
+  }
+
+  .first,
+  .introtxt {
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .first > img {
+    display: none;
+  }
+
+  .second {
+    width: 100%;
+  }
+
+  #profilepic {
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    height: auto;
+  }
+
+  #introtext {
+    font-weight: bolder;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #kontaktbtn {
+    float: none;
+  }
+
+  h3 {
+    margin-left: 0 !important;
+    text-align: left;
+    font-size: 20px !important;
+    margin-top: 10px !important;
+  }
+
+  .details {
+    width: 100%;
+  }
+
+  .infos {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info_dets {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  #main_image {
+    width: 100%;
+    height: auto;
+  }
+
+  .calendar {
+    flex-direction: column;
+  }
+
+  #wp-calendar {
+    margin-bottom: 15px;
+    margin-right: 0px;
+  }
+
+  .calc {
+    padding: 0px;
+    margin-left: 0px;
+  }
+}
