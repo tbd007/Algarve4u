@@ -8,129 +8,142 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
-      rel="stylesheet"
-    />
-    <link 
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  </head>
-  <body>
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous"
+  />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+  rel="stylesheet"
+/>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Open+Sans&family=Poppins:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.css"
+  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+  crossorigin="anonymous"
+/>
 
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+    crossorigin="anonymous"
+  />
+  </head>
+  <body >
+    <div class="smallheader">
+      <img src="logo.png" height="30"  id="logo" alt="logo"/>
+      <form class="form">
+        <div class="searchbar_det form-group">
+          <input
+            type="text"
+            class="form-control-sm"
+            placeholder="Wo soll es hingehen?"
+          />
+          <input placeholder="Check-in"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" />
+          <input placeholder="Check-out"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" " />
+          <input
+            type="text"
+            class="form-control-sm"
+            placeholder="Anzahl der Gäste"
+          />
+          <button id="det_search_btn" type="submit"><i class="fas fa-1x fa-search"></i></button>
+        </div>
+      </form>
+      <div class="nav" id="navbar">
+        <button type="button" class="det_btn">Login</button>
+        <button type="button" class="det_btn">Gastgeber werden</button>
+        <button id="langbtn">
+          <i class="fas fa-globe"></i><i class="fas fa-chevron-down"></i> 
+        </button>
+      </div>
+    </div>
   
 
-    <div class="details">
-        <div class="info_dets">
+    <div class="details px-2">
+        <h2 id="property_title">Villa Faro | Lebe lieber ungewöhnlich ****</h2>
+        <div class="subline_dets d-flex">
+        <p>4.3 · Joao Costa · Faro, Portugal</p>
+        </div>
 
-            <h2>CASA MAREIKE</h2>
-            
-            <div class="infos">
-                <img id="main_image" src="https://lieblingsquartiere.com/src/files/casa-luum-portugal-algarve-1.jpg" width="600px" height="470" style=" margin-top: 10px; border:7px solid rgb(115, 143, 223)"/>
-                
-                <div class="house_dets">
-                
-                <div class="amenities">
 
-                    <h5>AUSSTATTUNG</h5>
-                    <hr>
-                    <div class="row d-flex align-items-center ml-2 mb-2">
-                        <i class="fa fa- fa-2x fa-bed"></i><p>4 Schlafzimmer</p>
-                    </div> 
-
-                    <div class="row d-flex align-items-center ml-2 mb-2">
-                        <i class="fas fa-2x fa-users"></i><p>7 Personen</p>
-                    </div>
-                  
-                    
-                    <br><br>
-                  
-                    <h5>ZUSÄTZLICHE MERKMALE</h5>
-                    <hr><br>
-                    <i class="fa fa-2x fa-wifi"></i>
-                    <i class="fa fa-2x fa-paw"></i>
-                    <i class="fa fa-2x fa-swimming-pool"></i>
-                    <i class="fab fa-2x fa-accessible-icon"></i>
-                    <i class="fas fa-2x fa-parking"></i>
-                    
-                    <br><br>
-                   
-                    <h5>BEWERTUNG</h5>
-                    <hr>
-                    <div class="row d-flex align-items-center mt-3"><p class="Rating2">4.5</p><p>Hervorragend</p></div>  
-                    
-                </div>
-                 
-                </div>
-            </div>
-
-            <div id="dets">
-                <div id="img_dets">
-                  <div>
-                    <img
-                      class="dets_img"
-                      src="https://lieblingsquartiere.com/src/files/casa-luum-portugal-algarve-3-4_xl.jpeg"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      class="dets_img"
-                      src="https://lieblingsquartiere.com/src/files/casa-luum-portugal-algarve-1.jpg"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      class="dets_img"
-                      src="https://lieblingsquartiere.com/src/files/casa-luum-portugal-algarve-3-4_xl.jpeg"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      class="dets_img"
-                      src="https://lieblingsquartiere.com/src/files/photo-3-4_xl.jpg"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      class="dets_img"
-                      src="https://lieblingsquartiere.com/src/files/casa-luum-portugal-algarve-5-4_xl.jpg"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      class="dets_img"
-                      src="https://lieblingsquartiere.com/src/files/casa-luum-portugal-algarve-5-4_xl.jpeg"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      class="dets_img"
-                      src="https://lieblingsquartiere.com/src/files/casa-luum-portugal-algarve-3-4_xl.jpeg"
-                    />
-                  </div>
-                </div>
-
-            <p><h3>FERIENHAUS, ALGARVE</h3>
-                Frühstück auf der Terrasse, dann in den Pool eintauchen, Lunch im schattigen Innenhof, dann am Pool abhängen, Sundowner auf der Dachterrasse und dann….
-                Hier gibt es so viele Möglichkeiten sich nach der Sonne oder den Sternen auszurichten und in die Umgebung zu staunen! Der Architekt Pedro Domingos hat der Natur mit seiner Casa Luum ein geometrisches Konzept entgegengesetzt, das mit einer verschachtelten Bauweise von verschiedenen geometrischen Baukörpern fast formalistisch wirkt, dann aber doch leicht und spielerisch um die Ecke kommt. Apropos Ecke - aus jedem Winkel ergibt sich ein neues Bild beim Blick auf diese Anordnung. Jedes Fleckchen ist nicht nur ein eigener Hingucker, sondern auch wie gemacht für den perfekten Urlaub. Dieses strahlend weiße Ferienhaus von Gastgeber Kristoff in der Nähe von Faro an der Algarve ist modern, minimalistisch und spannend gestaltet.
-                <br><br>
-                <h3>DER GASTGEBER</h3>
-                <h5>Kristoff van der Veekens</h5>   
-                der Gastgeber Kristoff van der Veekens achtet auf Nachhaltigkeit: das Wasser wird z.B. mit Solarenergie geheizt
-                die Keramik und Textilien kommen von dem kleinen Label Casa Cubista in Olhao
-                bei der Gartengestaltung wurde mit dem Lissabonner Unternehmen Sigmentum zusammengearbeitet, die regionales Saatgut aus der Natur sammeln und wieder kultivieren; die Kräuter im Garten dürfen gepflückt und genossen werden
-                andere Aktivitäten außer (sonnen)baden: Radfahren oder Vögel beobachten im Naturreservat Ria Formosa (eines der sieben Naturwunder von Portugal), zum Strand fahren (ca. eine halbe Stunde mit dem Auto) oder mit einem privat gemieteten Boot eine Spritztour machen
-                das nahe gelegene und niedliche Dörfchen Santa Barbara de Nexe bietet alles für den täglichen Bedarf
-                das Haus liegt mitten in der Natur an einer namenlosen Straße
-                Mindestaufenthalt beträgt eine Woche
-                Kinder sind willkommen (aber Achtung Pool! - für größere Kinder toll, kleinere müssen beaufsichtigt werden) </p>    
+        <div class="grid-container_gallery mb-3">
          
+            <img class="main_image" src="https://a0.muscache.com/im/pictures/miso/Hosting-40314481/original/aebe66e2-11e4-4fc3-91e8-ffdce8279b29.jpeg?aki_policy=x_large" height="400">
+
+            <div class="gallery_pics">
+            <img class="img_one" src="https://a0.muscache.com/im/pictures/miso/Hosting-40314481/original/acb4407e-920d-4a1e-b629-cf2fc17302f9.jpeg?aki_policy=xx_large" />
+            <img  class="img_two"src="https://a0.muscache.com/im/pictures/miso/Hosting-40314481/original/7f0e0892-269c-4261-8a65-2c36b304f6a4.jpeg?aki_policy=large" />
+           <img class="img_three" src="https://a0.muscache.com/im/pictures/miso/Hosting-40314481/original/4c4f4870-d719-408d-b971-b9cf7f12ff22.jpeg?aki_policy=xx_large " />
+            <img class="img_four" src="https://a0.muscache.com/im/pictures/miso/Hosting-40314481/original/9d202dc6-82fb-4278-8ba2-cc9846090bd3.jpeg?aki_policy=xx_large" />
+          </div>
+        </div>
+       
+       
+       
+      
+      <div class="sub_title px-1 d-flex">
+        <div>
+         <h3> Ganzes Haus · Gastgeber: João </h3>
+         <p>4 Gäste · 2 Schlafzimmer · 3 Betten · 1,5 gemeinsame Bäder</p>
+        </div>
+        <img id="hostimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQCu-iul5LZavpulgJBaBHGjvVslRvDjxBUpA&usqp=CAU" alt="Host"/>
+      </div> 
+        
+       <hr>
+    
+
+    <div class="det_wrap mb-5">
+      <div class="det_list ">
+          <div class="d-flex align-items-center">
+          <img width="30" src="icon.PNG"/><p><b>Erweiterte Reinigung</b>
+          Dieser Gastgeber hat sich zur erweiterten Reinigung in 5 Schritten verpflichtet.</p> <br>
+          </div>
+
+          <div class="d-flex align-items-center">
+          <img width="30" src="icon.PNG"/><p><b>Eigenständiger Check-in</b>
+          Checke per Schlüsselbox selbst ein.</p><br>
+          </div>
+
+          <div class="d-flex align-items-center">
+          <img width="30" src="icon.PNG"/><p><b>Stornierungsbedingungen</b>
+          Storniere vor 3:00 PM am 5. Nov. und erhalte 50% % Rückerstattung, abzüglich der Service-Gebühr.</p><br>
+          </div>
+        
+      </div>
+     
+
+        <div class="det_desc">
+          <p>Are you looking for an exclusive Room in a fully renovated high style typical Portuguese House for your stay in Faro? This room for 2 located in a typical house has the best location in Faro just next to the Walled Old Town, close to everything you need to see in Faro and ideal to spend some restful holidays. Caya Room is the choice, inside Galya House. Don´t miss it! Book now :)
+
+            Die Unterkunft
+            WE ARE FULLY OPERATIONAL AND OPENED! Welcome home away from home!<br><br>
+            
+            If you are interested and happy in booking my Apt you don´t need to ask to proceed,
+            if you see availability simply use the instant booking procedure and confirm it. I will provide
+            all the information you need to know for a smooth stay and check in. :)
+            Time of arrival from 15h onwards is at anytime possible (late night check in).<br><br>
+            
+            Lizenznummer
+            105456/AL<br><br>
+            <a href="">Gastgeber kontaktieren</a></p>
+        </div>
+      </div>
+
+
+
+
+        <div class="calwrap">
+
                <!--Kalender--> 
                <div class="calendar">
                 <table id="wp-calendar">
@@ -171,11 +184,11 @@
                     </tr>
                     
                     <tr>
-                    <td>19</td><td>20</td><td>21</td><td>22</td><td id="selected">23</td><td>24</td><td>25</td>
+                    <td>19</td><td>20</td><td>21</td><td>22</td><td class="selected">23</td><td class="selected">24</td><td>25</td>
                     </tr>
                     
                     <tr>
-                    <td><a href="#" title="">26</a></td><td>27</td><td>28</td><td>29</td><td>30</td><td colspan="2">&nbsp;</td>
+                    <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td colspan="2">&nbsp;</td>
                     </tr>
                     
                     </tbody>
@@ -183,8 +196,8 @@
                     </table>
 
                     <div class="calc">
-                    <h3>IHR AUFENTHALT</h3>
-                    <p>23.12.2020 - 23.12.2020</p>
+                    <h3>IHRE REISEDATEN</h3>
+                    <p>23.12.2020 - 23.12.2020 · 1 Nacht</p>
                     
                     <hr>
                     <div class="row d-flex justify-content-between px-3">
@@ -194,8 +207,13 @@
                     
                     <div class="row d-flex justify-content-between px-3">
                         <p>Steuern & Gebühren</p>
-                        <p>20€</p>
+                        <p>15€</p>
                     </div>
+
+                    <div class="row d-flex justify-content-between px-3">
+                      <p>Reinigungsgebühr</p>
+                      <p>5€</p>
+                  </div>
                     
                     <hr>
                     <div class="row d-flex justify-content-between px-3">
@@ -203,121 +221,253 @@
                     <h5>150€</h5>
                     </div>
                     
-                    <button class="btn btn-warning mt-2">JETZT BUCHEN</button>
+                    <a class="btn_a" href="#popup1"><button class="book_btn mx-3" >UNTERKUNFT BUCHEN</button></a>
+                   
                     </div>
                     </div>
         </div>
+      </div>
      
       </div>
 
-      <div id="overview"><h3>ÄHNLICHE FERIENHÄUSER</h3></div>
+       <!--HAUSÜBERSICHT-->
+    <div id="overview" class="px-5 mt-5"><h3>Neue Ferienhäuser</h3></div>
 
-      <div class="houses">
-          <div class="card shadow" >
-              <img src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="bottom">
-                  <p id="Price">130€/N</p><p id="Rating">4.5</p>
-                  </div>
-                  <a href="#" class="btn btn-warning">DETAILS</a>
-                  </div>
-            </div>
-  
-            <div class="card shadow" >
-              <img src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="bottom">
-                  <p id="Price">130€/N</p><p id="Rating">4.5</p>
-                  </div>
-                  <a href="#" class="btn btn-warning">DETAILS</a>
-                  </div>
-            </div>
-  
-            <div class="card shadow" >
-              <img src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="bottom">
-                  <p id="Price">130€/N</p><p id="Rating">4.5</p>
-                  </div>
-                  <a href="#" class="btn btn-warning">DETAILS</a>
-                  </div>
-            </div>
-  
-            <div class="card shadow" >
-              <img src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="bottom">
-                  <p id="Price">130€/N</p><p id="Rating">4.5</p>
-                  </div>
-                  <a href="#" class="btn btn-warning">DETAILS</a>
-                  </div>
-            </div>
-  
-            <div class="card shadow" >
-              <img src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="bottom">
-                  <p id="Price">130€/N</p><p id="Rating">4.5</p>
-                  </div>
-                  <a href="#" class="btn btn-warning">DETAILS</a>
-                  </div>
-            </div>
-  
-            <div class="card shadow" >
-              <img src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="bottom">
-                  <p id="Price">130€/N</p><p id="Rating">4.5</p>
-                  </div>
-                  <a href="#" class="btn btn-warning">DETAILS</a>
-                  </div>
-            </div>
+    <div class="houses">
+      <div class="card">
+        <img
+          src="https://cf.bstatic.com/images/hotel/max1024x768/258/258569076.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p id="Rating">4.5</p>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+
+          <div class="bottom">
+            <a href="search.html" class="mainbuttondark">Details</a>
+            <p id="Price">130€/N</p>
+          </div>
+        </div>
       </div>
-  
 
-    <div class="bookings_search" style="margin-top: 100px">
-      <h6 class="mr-2">INDIVIDUELLE & PERSÖNLICHE BERATUNG</h6>
-      <p class="mr-3">
-        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua.
-      </p>
-      <button id="kontaktbtn" class="btn btn-warning mr-3">
-        KONTAKTIEREN SIE UNS
-      </button>
+      <div class="card">
+        <img
+          src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p id="Rating">4.5</p>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+
+          <div class="bottom">
+            <a href="#" class="mainbuttondark">Details</a>
+            <p id="Price">130€/N</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://www.boutique-homes.com/wp-content/uploads/2017/01/luxury_villa_portugal_24_new.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p id="Rating">4.5</p>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+
+          <div class="bottom">
+            <a href="#" class="mainbuttondark">Details</a>
+            <p id="Price">130€/N</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR0wRjMyoenqDri0lg4yY-oORAPUKZdZh23KA&usqp=CAU"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p id="Rating">4.5</p>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+
+          <div class="bottom">
+            <a href="#" class="mainbuttondark">Details</a>
+            <p id="Price">130€/N</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p id="Rating">4.5</p>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+
+          <div class="bottom">
+            <a href="#" class="mainbuttondark">Details</a>
+            <p id="Price">130€/N</p>
+          </div>
+        </div>
+      </div>
+
+    
     </div>
 
+     
+    <div class="about">
+      <img id="about_img" src="sea-2710932_960_720.jpg" height="380" width="45%" class="ml-5 mr-0 shadow" />
+      <div id="about_us">
+        <img src="logo.png" width="220" class="mb-3 "/>
+        <h3>Wir finden das ideale Ferienhaus für Sie!</h3>
+        <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.</p>
+          <button class="mainbuttondark mt-2">Individuelle Beratung</button>
+      </div>
+  </div>
 
 
-    <div class="footer d-flex-row mt-0">
-      <li><a>Impressum</a></li>
-      <li><a>&copy 2020 Algarve</a></li>
-      <li><a>Datenschutzerklärung</a></li>
-    </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
+
+    <div class="footer d-flex row">
+      <div class="flex-column">
+        <li><a>Impressum</a></li>
+        <li><a>Datenschutzerklärung</a></li>
+      </div>
+      <div class="flex-column">
+        <li><a>Buchungen verwalten</a></li>
+        <li><a>Gastgeber werden</a></li>
+      </div>
+      <div class="flex-column">
+        <li><a>Kontakt</a></li>
+        <li><a>&copy 2020 Algarve</a></li>
+      </div>
+
+
+      <div id="popup1" class="pop_overlay">
+        <div class="popup">
+          <h3>Bestätigen und bezahlen</h3>
+          <hr>
+          <h3>Villa Faro<span style="color: rgb(250, 208, 72);margin-left:3px">****</span></h3>
+          
+          
+         
+          
+
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p>23.12.2020 - 24.12.2020 | 3 Gäste</p>
+            <p>4 Gäste · 2 Schlafzimmer · 3 Betten · 1,5 gemeinsame Bäder</p>
+            <hr>
+            <a href="">Stornierungsbedingungen</a>
+            
+            <hr>
+            <div class="row  d-flex justify-content-between px-3">
+                <p>Übernachtung</p>
+                <p>130€</p>
+            </div>
+            
+            <div class="row d-flex justify-content-between px-3">
+                <p>Steuern & Gebühren</p>
+                <p>15€</p>
+            </div>
+
+            <div class="row d-flex justify-content-between px-3">
+              <p>Reinigungsgebühr</p>
+              <p>5€</p>
+          </div>
+            
+            <hr>
+            <div class="row d-flex justify-content-between px-3  py-2 px-s">
+            <h5>GESAMTPREIS</h5>
+            <h5>150€</h5>
+            </div>
+            <br><br>
+            <p>Bitte tragen Sie Ihre Daten ein</p>
+            <form class="form">
+              <div class="form-group" id="pop_form">
+                
+                <input
+                  type="text"
+                  class="form-control-sm"
+                  placeholder="Nachname*"
+                />
+                <input
+                  type="text"
+                  class="form-control-sm"
+                  placeholder="Vorname*"
+                />
+                <input
+                  type="text"
+                  class="form-control-sm"
+                  placeholder="Straße/Hausnummer*"
+                />
+                <input
+                  type="text"
+                  class="form-control-sm"
+                  placeholder="PLZ*"
+                />
+                <input
+                  type="text"
+                  class="form-control-sm"
+                  placeholder="Ort*"
+                />
+                <input
+                  type="text"
+                  class="form-control-sm"
+                  placeholder="Staat*"
+                />
+                <input
+                  type="email"
+                  class="form-control-sm"
+                  placeholder="Email*"
+                />
+                <input
+                  type="email"
+                  class="form-control-sm"
+                  placeholder="Email bestätigen*"
+                />
+                <input
+                  type="text"
+                  class="form-control-sm"
+                  placeholder="Telefonnummer(optional)"
+                />
+              </div>
+              <a class="btn_a" href="payment.html"><button class="book_btn_pop mx-3">ÜBERSICHT & ZAHLUNG</button></a>
+            </form>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
