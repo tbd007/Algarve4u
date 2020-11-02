@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
     <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -39,7 +39,7 @@
     crossorigin="anonymous"
   />
   </head>
-  <body >
+  <body>
     <div class="smallheader">
       <img src="logo.png" height="30"  id="logo" alt="logo"/>
       <form class="form">
@@ -135,6 +135,10 @@
             
             Lizenznummer
             105456/AL<br><br>
+            <h5>Über den Gastgeber</h5>
+            <p> If you are interested and happy in booking my Apt you don´t need to ask to proceed,
+              if you see availability simply use the instant booking procedure and confirm it. I will provide
+              all the information you need to know for a smooth stay and check in. :)</p>
             <a href="">Gastgeber kontaktieren</a></p>
         </div>
       </div>
@@ -379,13 +383,11 @@
         <div class="popup">
           <h3>Bestätigen und bezahlen</h3>
           <hr>
-          <h3>Villa Faro<span style="color: rgb(250, 208, 72);margin-left:3px">****</span></h3>
-          
-          
-         
+          <img class="thumbnail" src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg" />
+          <h3>Villa Faro<span style="color: rgb(250, 208, 72);margin-left3px">****</span></h3>
           
 
-          <a class="close" href="#">&times;</a>
+          <a class="close" href="#">X</a>
           <div class="content">
             <p>23.12.2020 - 24.12.2020 | 3 Gäste</p>
             <p>4 Gäste · 2 Schlafzimmer · 3 Betten · 1,5 gemeinsame Bäder</p>
@@ -416,7 +418,7 @@
             <br><br>
             <p>Bitte tragen Sie Ihre Daten ein</p>
             <form class="form">
-              <div class="form-group" id="pop_form">
+              <div class="form-group pop_form" >
                 
                 <input
                   type="text"
@@ -458,13 +460,27 @@
                   class="form-control-sm"
                   placeholder="Email bestätigen*"
                 />
-                <input
-                  type="text"
-                  class="form-control-sm"
-                  placeholder="Telefonnummer(optional)"
-                />
+
+                
+                <textarea rows="4"  class="form-control-sm" placeholder="Nachricht" /></textarea>
               </div>
-              <a class="btn_a" href="payment.html"><button class="book_btn_pop mx-3">ÜBERSICHT & ZAHLUNG</button></a>
+
+              <div class="paymentoptions">
+                <p>Bitte wählen Sie Ihre Zahlungsart</p>
+                <div><input type="radio" name="zahlungsart" value="ueberweisung"/><label for="ueberweisung">Überweisung</label></div>
+                <div><input type="radio" name="zahlungsart" value="paypal"/><label for="paypal">PayPal</label></div>
+                <div><input type="radio" name="zahlungsart" value="kreditkarte"/><label for="kreditkarte">Kreditkarte</label></div>
+                <form class="form" id="paymentform">
+                  <div class="form-group pop_form">
+                  <input type="text"  class="form-control-sm" name="karteninhaber" placeholder="Karteninhaber"/>
+                  <input type="text"  class="form-control-sm" name="kartennummer" placeholder="Kartennummer"/>
+                  <input type="text"  class="form-control-sm" name="cvv" placeholder="CVV"/>
+                  <div class="d-flex justify-content-between"><input class="form-control-sm"type="text" id="exp_month" name="expirymonth" placeholder="MM"/>
+                  <input class="form-control-sm" type="text" id="exp_year" name="expiryyear" placeholder="JJ"/></div>
+                </div>
+                </form>
+              </div>  
+              <a class="btn_a" href="payment.html"><button class="book_btn_pop mx-3">JETZT BUCHEN</button></a>
             </form>
           </div>
         </div>

@@ -30,6 +30,35 @@
   />
   </head>
   <body>
+
+    <div class="smallheader">
+      <img src="logo.png" height="30"  id="logo" alt="logo"/>
+      <form class="form">
+        <div class="searchbar_det form-group">
+          <input
+            type="text"
+            class="form-control-sm"
+            placeholder="Wo soll es hingehen?"
+          />
+          <input placeholder="Check-in"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" />
+          <input placeholder="Check-out"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" " />
+          <input
+            type="text"
+            class="form-control-sm"
+            placeholder="Anzahl der Gäste"
+          />
+          <button id="det_search_btn" type="submit"><i class="fas fa-1x fa-search"></i></button>
+        </div>
+      </form>
+      <div class="nav" id="navbar">
+        <button type="button" class="det_btn">Login</button>
+        <button type="button" class="det_btn">Gastgeber werden</button>
+        <button id="langbtn">
+          <i class="fas fa-globe"></i><i class="fas fa-chevron-down"></i> 
+        </button>
+      </div>
+    </div>
+  
     <div class="maincontainer">
       <!--SUCHERGEBNISSE-->
       <div id="searchresults">

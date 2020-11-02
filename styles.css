@@ -24,7 +24,7 @@ header {
       rgba(34, 40, 68, 0.682),
       rgba(16, 17, 37, 0.905)
     ),
-    url("https://cdn.pixabay.com/photo/2017/12/20/10/48/portugal-3029665_960_720.jpg");
+    url("portugal-3029665_640.jpg");
   width: 100%;
   height: 500px;
   margin: 0;
@@ -105,6 +105,7 @@ h4 {
   padding: 5px 15px;
   text-decoration: none;
   font-weight: 600 !important;
+  background: white;
 }
 
 .mainbuttondark:hover {
@@ -181,13 +182,6 @@ h4 {
   margin-right: 2px !important;
   padding: 5px 10px;
   font-size: 15px;
-}
-
-.intro {
-  width: 60%;
-  margin: 60px auto 30px auto;
-  text-align: center;
-  height: 200px;
 }
 
 #introtxt {
@@ -354,17 +348,6 @@ a {
   font-size: 13px;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.houses::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.houses {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
 .footer {
   height: 80px;
   box-shadow: 3px 3px 10px gray;
@@ -409,11 +392,13 @@ h3 {
 }
 
 #buttons > button {
-  font-size: 15px;
-  margin: 5px;
+  color: rgb(66, 61, 99);
+  border: 2px solid rgb(41, 41, 53);
   border-radius: 5px;
-  background: #49acac;
-  box-shadow: inset 10px 10px 35px #132733, inset -17px -17px 35px #2b7075;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-weight: 600 !important;
+  margin-right: 2px;
 }
 
 #buttons > p {
@@ -731,6 +716,17 @@ h5 {
   color: rgba(216, 215, 215, 0);
 }
 
+.paymentoptions {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+label {
+  margin-left: 5px;
+}
+
 .pop_overlay {
   position: absolute;
   top: 0;
@@ -752,7 +748,7 @@ h5 {
   padding: 20px;
   background: white;
   border-radius: 5px;
-  width: 50%;
+  width: 60%;
   height: 90vh;
   overflow: scroll;
   position: relative;
@@ -772,8 +768,8 @@ h5 {
   font-size: 35px;
   font-weight: bold;
   text-decoration: none;
-  color: rgb(10, 10, 10);
-  border: 1px solid gray;
+  color: rgb(29, 28, 28);
+  border: 1px solid rgb(73, 73, 73);
   padding: 2px 5px;
 }
 .popup .close:hover {
@@ -784,28 +780,44 @@ h5 {
   color: black;
 }
 
-#pop_form {
+.thumbnail {
+  margin: 10px 0px;
+  border-radius: 7px;
+  position: absolute;
+  top: 13%;
+  right: 4%;
+  object-fit: fill;
+  height: 100px;
+  width: 100px;
+}
+
+.pop_form {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-gap: 7px;
 }
 
-#pop_form > input {
+.pop_form > input {
   border: 1px solid gray;
   box-shadow: 2px 1px 5px rgb(216, 216, 219);
+}
+
+textarea {
+  height: 100px !important;
 }
 
 .book_btn_pop {
   background: rgb(44, 52, 94);
   padding: 10px 15px;
-  width: 92%;
+  width: 96%;
   border-radius: 5px;
   color: white;
   font-weight: 600;
   letter-spacing: 0.1rem;
   border: 1px solid rgb(250, 208, 72);
   margin: 10px auto;
+  align-self: flex-end;
 }
 
 .book_btn_pop:hover {
@@ -817,7 +829,7 @@ h5 {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 5px;
 }
 
 /* Track */
@@ -830,32 +842,68 @@ h5 {
   background: rgb(250, 208, 72);
 }
 
+.footer > div > li > a {
+  color: white !important;
+}
+
 /* QUERIES */
 
 @media screen and (max-width: 768px) {
   body {
-    width: 100% !important;
+    width: 100%;
+    overflow-x: hidden;
     margin: 0 auto;
   }
-  .searchbar,
+
+  p {
+    font-size: 15px;
+  }
+
+  h4,
+  h1,
+  .mainbutton {
+    display: none;
+  }
+
+  #logo_home {
+    height: 15px !important;
+  }
+
   #buttons {
     display: flex;
     flex-direction: column !important;
     justify-content: space-between !important;
     height: auto !important;
     padding: 20px !important;
+    margin-top: 20px;
+  }
+
+  .searchbar {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    height: auto !important;
+    padding: 30px 15px 15px 10px !important;
+    margin: 10px auto;
+    width: 80% !important;
+    background: none;
   }
 
   input,
   .form-control-sm {
-    margin-bottom: 5px;
-    width: 60%;
+    margin-bottom: 5px !important;
+    width: 80% !important;
+    border-radius: 7px !important;
+    background-color: rgba(255, 255, 255, 0.992) !important;
   }
 
   header {
     width: 100% !important;
-    height: 200px;
-    background-image: url("beach-3946627_1920.jpg");
+    height: 400px;
+  }
+
+  .overlay {
+    display: none !important;
   }
 
   .nav {
@@ -866,8 +914,18 @@ h5 {
   .nav > button,
   #buttons > button {
     font-size: 12px !important;
-    height: 30px;
-    margin: 5px;
+    height: 25px;
+    margin: 2px;
+  }
+
+  .fa-globe,
+  .fa-chevron-down {
+    font-size: 14px;
+    margin-left: 0px;
+  }
+
+  #usp {
+    flex-direction: column;
   }
 
   .footer {
@@ -880,20 +938,40 @@ h5 {
 
   .bookings {
     grid-template-rows: auto auto;
-    grid-template-columns: 1fr;
-    background: #12212b;
+    grid-template-columns: 100%;
     padding: 0px !important;
     width: 100%;
     margin: 0;
   }
 
-  .first,
-  .introtxt {
-    width: 100% !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    display: flex;
-    justify-content: center;
+  .card {
+    min-width: 250px !important;
+  }
+
+  .card > img {
+    min-width: 250px !important;
+  }
+
+  .houses,
+  .overview,
+  .about,
+  #about_img {
+    width: 100%;
+    padding: 0px !important;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  #about_img {
+    width: 100vw;
+    height: auto;
+  }
+
+  #about_us {
+    width: 100vw;
+    padding: 0px 10px;
   }
 
   #profilepic {
@@ -901,7 +979,9 @@ h5 {
     margin: 0 auto;
   }
 
-  .intro {
+  #introimage > img {
+    width: 340px !important;
+    margin-bottom: 10px;
     height: auto;
   }
 
