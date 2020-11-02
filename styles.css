@@ -885,6 +885,7 @@ textarea {
     height: auto !important;
     padding: 30px 15px 15px 10px !important;
     margin: 10px auto;
+    margin-left: -15px;
     width: 80% !important;
     background: none;
   }
@@ -971,7 +972,7 @@ textarea {
 
   #about_us {
     width: 100vw;
-    padding: 0px 10px;
+    padding: 0px 20px;
   }
 
   #profilepic {
@@ -1029,5 +1030,16 @@ textarea {
   .calc {
     padding: 0px;
     margin-left: 0px;
+  }
+
+  .footer {
+    width: 100% !important;
+    margin: 0 auto;
+    align-items: center !important;
+  }
+
+  .footer > div {
+    align-items: center;
+    text-align: center;
   }
 }
