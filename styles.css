@@ -1034,7 +1034,7 @@ textarea {
 
   .footer {
     width: 100% !important;
-    margin: 0 auto;
+    margin: 0 auto !important;
     align-items: center !important;
   }
 
