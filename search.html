@@ -31,10 +31,24 @@
   </head>
   <body>
 
-    <div class="smallheader">
-      <img src="logo.png" height="30"  id="logo" alt="logo"/>
-      <form class="form">
-        <div class="searchbar_det form-group">
+    <div class="smallheader d-flex-column align-items-start">
+      
+      <div class="nav d-flex justify-content-between px-3" id="navbar">
+        
+        <div>
+        <img src="logo.png" height="30"  id="logo" alt="logo"/>
+        </div>
+
+        <div>
+        <a href="#login"><button type="button" class="det_btn">Login</button></a>
+        <button type="button" class="det_btn">Gastgeber werden</button>
+        <button id="langbtn">
+          <i class="fas fa-globe"></i><i class="fas fa-chevron-down"></i> 
+        </button>
+        </div>
+      </div>
+
+        <div class="searchbar_search my-3 mx-3">
           <input
             type="text"
             class="form-control-sm"
@@ -49,36 +63,14 @@
           />
           <button id="det_search_btn" type="submit"><i class="fas fa-1x fa-search"></i></button>
         </div>
-      </form>
-      <div class="nav" id="navbar">
-        <button type="button" class="det_btn">Login</button>
-        <button type="button" class="det_btn">Gastgeber werden</button>
-        <button id="langbtn">
-          <i class="fas fa-globe"></i><i class="fas fa-chevron-down"></i> 
-        </button>
+
       </div>
     </div>
   
     <div class="maincontainer">
       <!--SUCHERGEBNISSE-->
       <div id="searchresults">
-        <form class="form">
-          <div class="searchbar2 form-group">
-            <input
-              type="text"
-              class="form-control-sm"
-              placeholder="Wo soll es hingehen?"
-            />
-            <input placeholder="Check-in" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" />
-            <input placeholder="Check-out" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" " />
-            <input
-              type="text"
-              class="form-control-sm"
-              placeholder="Anzahl der Gäste"
-            />
-            <button type="submit"><i class="fas fa-1x fa-search"></i></button>
-          </div>
-        </form>
+        
         <div
           id="buttons"
           class="col-12 mx-auto d-flex justify-content-center align-items-center"
@@ -104,6 +96,12 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
+              <div class="ausstattung">
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-swimming-pool"></i>
+                <i class="fas fa-umbrella-beach"></i>
+                <i class="fas fa-parking"></i>
+              </div>
               <div class="bottom">
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
@@ -124,6 +122,12 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
+              <div class="ausstattung">
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-swimming-pool"></i>
+                <i class="fas fa-umbrella-beach"></i>
+                <i class="fas fa-parking"></i>
+              </div>
               <div class="bottom">
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
@@ -144,6 +148,12 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
+              <div class="ausstattung">
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-swimming-pool"></i>
+                <i class="fas fa-umbrella-beach"></i>
+                <i class="fas fa-parking"></i>
+              </div>
               <div class="bottom">
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
@@ -164,6 +174,12 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
+              <div class="ausstattung">
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-swimming-pool"></i>
+                <i class="fas fa-umbrella-beach"></i>
+                <i class="fas fa-parking"></i>
+              </div>
               <div class="bottom">
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
@@ -184,6 +200,12 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
+              <div class="ausstattung">
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-swimming-pool"></i>
+                <i class="fas fa-umbrella-beach"></i>
+                <i class="fas fa-parking"></i>
+              </div>
               <div class="bottom">
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
@@ -204,6 +226,12 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
+              <div class="ausstattung">
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-swimming-pool"></i>
+                <i class="fas fa-umbrella-beach"></i>
+                <i class="fas fa-parking"></i>
+              </div>
               <div class="bottom">
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
@@ -224,6 +252,12 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
+              <div class="ausstattung">
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-swimming-pool"></i>
+                <i class="fas fa-umbrella-beach"></i>
+                <i class="fas fa-parking"></i>
+              </div>
               <div class="bottom">
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
@@ -244,6 +278,12 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
+              <div class="ausstattung">
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-swimming-pool"></i>
+                <i class="fas fa-umbrella-beach"></i>
+                <i class="fas fa-parking"></i>
+              </div>
               <div class="bottom">
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
@@ -263,9 +303,9 @@
 </div>
     </div>
 
-    <div class="about" style="background:none;">
+    <div class="about" id="about_search">
       
-      <img id="about_img" src="https://sunandsoul.de/wp-content/uploads/2019/04/20190608-PhotoSparks-11.jpg" height="320" width="auto" style="margin-left:30px;"/>
+      <img id="about_img" src="https://sunandsoul.de/wp-content/uploads/2019/04/20190608-PhotoSparks-11.jpg" height="320" width="auto" />
     
     <div id="about_us" style="width: 50%;">
       
@@ -275,7 +315,7 @@
         sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
         rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
         ipsum dolor sit amet.</p>
-        <button class="mainbuttondark">Individuelle Beratung</button>
+        <a href="#contactform"><button class="mainbuttondark">Individuelle Beratung</button></a>
     </div>
   </div>
 
@@ -289,10 +329,86 @@
         <li><a>Gastgeber werden</a></li>
       </div>
       <div class="flex-column">
-        <li><a>Kontakt</a></li>
+        <li><a href="#contactform">Kontakt</a></li>
         <li><a>&copy 2020 Algarve</a></li>
-        
       </div>
+      </div>
+
+      <!-- Contactform-->
+
+      <div class="container contact" id="contactform">
+        
+        <div class="row">
+          
+          <div class="col-md-3">
+            <div class="contact-info">
+              <img src="logo.png" alt="image" width="170"/>
+              <h2>KONTAKTIEREN SIE UNS</h2>
+              <h4>Sie haben Fragen oder wünschen eine individuelle Beratung - Kontaktieren Sie uns!</h4>
+              <div id="phone">
+              <i class="fa fa-phone mr-2 mt-1" style="color:rgb(280, 208, 72)"></i><a href=""><p style="color:rgb(280, 208, 72)">+49 909 99 99</p></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="contact-form ">
+              <a class="close_form" href="#">X</a>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="fname">Vorname:</label>
+                <div class="col-sm-10">          
+                <input type="text" class="form-control" id="fname" placeholder="Vornamen eingeben" name="fname">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="lname">Nachname:</label>
+                <div class="col-sm-10">          
+                <input type="text" class="form-control" id="lname" placeholder="Nachnamen eingeben" name="lname">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Ihre Email Adresse" name="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="comment">Nachricht:</label>
+                <div class="col-sm-10">
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+              </div>
+              <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Senden</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container" id="login">
+        <div class="login-form">
+        <div class="main-div">
+            <div class="panel">
+           <img src="logo.png" width="170">
+           <p class="mt-2">Bitte geben Sie Email und Passwort ein</p>
+           </div>
+            <form id="Login">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Passwort">
+                </div>
+                <div class="forgot ml-1">
+                <a style="font-size:13px!important; color:rgb(170, 169, 169)" href="">Passwort vergessen?</a>
+        </div>
+                <button type="submit" class="book_btn">Login</button>
+            </form>
+            </div>
+        </div></div></div>  
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

@@ -40,10 +40,24 @@
   />
   </head>
   <body>
-    <div class="smallheader">
-      <img src="logo.png" height="30"  id="logo" alt="logo"/>
-      <form class="form">
-        <div class="searchbar_det form-group">
+    <div class="smallheader d-flex-column align-items-start">
+      
+      <div class="nav d-flex justify-content-between px-3" id="navbar">
+        
+        <div>
+        <img src="logo.png" height="30"  id="logo" alt="logo"/>
+        </div>
+
+        <div>
+          <a href="#login"><button type="button" class="det_btn">Login</button></a>
+        <button type="button" class="det_btn">Gastgeber werden</button>
+        <button id="langbtn">
+          <i class="fas fa-globe"></i><i class="fas fa-chevron-down"></i> 
+        </button>
+        </div>
+      </div>
+
+        <div class="searchbar_search my-3 mx-3">
           <input
             type="text"
             class="form-control-sm"
@@ -58,18 +72,14 @@
           />
           <button id="det_search_btn" type="submit"><i class="fas fa-1x fa-search"></i></button>
         </div>
-      </form>
-      <div class="nav" id="navbar">
-        <button type="button" class="det_btn">Login</button>
-        <button type="button" class="det_btn">Gastgeber werden</button>
-        <button id="langbtn">
-          <i class="fas fa-globe"></i><i class="fas fa-chevron-down"></i> 
-        </button>
+
       </div>
     </div>
-  
 
-    <div class="details px-2">
+
+       
+
+    <div class="details px-2" >
         <h2 id="property_title">Villa Faro | Lebe lieber ungewöhnlich ****</h2>
         <div class="subline_dets d-flex">
         <p>4.3 · Joao Costa · Faro, Portugal</p>
@@ -98,7 +108,7 @@
         </div>
         <img id="hostimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQCu-iul5LZavpulgJBaBHGjvVslRvDjxBUpA&usqp=CAU" alt="Host"/>
       </div> 
-        
+      
        <hr>
     
 
@@ -123,6 +133,7 @@
      
 
         <div class="det_desc">
+
           <p>Are you looking for an exclusive Room in a fully renovated high style typical Portuguese House for your stay in Faro? This room for 2 located in a typical house has the best location in Faro just next to the Walled Old Town, close to everything you need to see in Faro and ideal to spend some restful holidays. Caya Room is the choice, inside Galya House. Don´t miss it! Book now :)
 
             Die Unterkunft
@@ -135,103 +146,164 @@
             
             Lizenznummer
             105456/AL<br><br>
-            <h5>Über den Gastgeber</h5>
+            <hr>
+
+            <h5>Ausstattung</h5>
+            <br>
+            <div class="d-flex justify-content-between col-8 mb-3">
+            <div class="ausstattung_det d-flex-column">
+              <div class="d-flex"><i class="fas fa-wifi mr-2"></i><p>Wlan</p></div>
+              <div class="d-flex"><i class="fas fa-tv mr-2"></i><p>Kabelfernsehen</p></div>
+              <div class="d-flex"><i class="fas fa-swimming-pool mr-2"></i><p>Außenpool</p></div>
+              <div class="d-flex"><i class="fas fa-umbrella-beach mr-2"></i><p>Strandnähe</p></div>
+            </div>
+            <div class="ausstattung_det d-flex-column">
+              <div class="d-flex"><i class="fas fa-wifi mr-2"></i><p>Wlan</p></div>
+              <div class="d-flex"><i class="fab fa-accessible-icon mr-2"></i><p>Rollstuhlgerecht</p></div>
+              <div class="d-flex"><i class="fas fa-swimming-pool mr-2"></i><p>Außenpool</p></div>
+              <div class="d-flex"><i class="fas fa-umbrella-beach mr-2"></i><p>Strandnähe</p></div>
+            </div>
+            </div>
+            <hr>
+
+            <h5>Der Gastgeber</h5>
             <p> If you are interested and happy in booking my Apt you don´t need to ask to proceed,
               if you see availability simply use the instant booking procedure and confirm it. I will provide
               all the information you need to know for a smooth stay and check in. :)</p>
             <a href="">Gastgeber kontaktieren</a></p>
-        </div>
-      </div>
 
+            <div class="calwrap mt-5">
+              <i class="fas fa-chevron-left"></i>  
+              <i class="fas fa-chevron-right"></i>
 
-
-
-        <div class="calwrap">
-
-               <!--Kalender--> 
-               <div class="calendar">
-                <table id="wp-calendar">
-                    <caption>Dezember 2020</caption>
-                    
-                    <thead>
-                    <tr>
-                    <th scope="col" title="Monday">M</th>
-                    <th scope="col" title="Tuesday">T</th>
-                    <th scope="col" title="Wednesday">W</th>
-                    <th scope="col" title="Thursday">T</th>
-                    <th scope="col" title="Friday">F</th>
-                    <th scope="col" title="Saturday">S</th>
-                    <th scope="col" title="Sunday">S</th>
-                    </tr>
-                    </thead>
-
-                    <pre> <tfoot>
-                    <tr>
-                    <td colspan="3" id="prev"><a href="#" title="">&laquo; Nov</a></td>
-                    <td>&nbsp;</td>
-                    <td colspan="3" id="next"><a href="#" title="">Jan &raquo;</a></td>
-                    </tr>
-                    </tfoot></pre>
-                    <tbody>
-                    
-                    <tr>
-                    <td colspan="3">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td>
-                    </tr>
-                    
-                    <tr>
-                    <td class="occupied">5</td><td class="occupied">6</td><td class="occupied">7</td><td class="occupied">8</td><td>9</td><td>10</td><td>11</td>
-                    </tr>
-                    
-                    <tr>
-                    
-                    <td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
-                    </tr>
-                    
-                    <tr>
-                    <td>19</td><td>20</td><td>21</td><td>22</td><td class="selected">23</td><td class="selected">24</td><td>25</td>
-                    </tr>
-                    
-                    <tr>
-                    <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td colspan="2">&nbsp;</td>
-                    </tr>
-                    
-                    </tbody>
-                    
-                    </table>
-
-                    <div class="calc">
-                    <h3>IHRE REISEDATEN</h3>
-                    <p>23.12.2020 - 23.12.2020 · 1 Nacht</p>
-                    
-                    <hr>
-                    <div class="row d-flex justify-content-between px-3">
-                        <p>Übernachtung</p>
-                        <p>130€</p>
-                    </div>
-                    
-                    <div class="row d-flex justify-content-between px-3">
-                        <p>Steuern & Gebühren</p>
-                        <p>15€</p>
-                    </div>
-
-                    <div class="row d-flex justify-content-between px-3">
-                      <p>Reinigungsgebühr</p>
-                      <p>5€</p>
-                  </div>
-                    
-                    <hr>
-                    <div class="row d-flex justify-content-between px-3">
-                    <h5>GESAMTPREIS</h5>
-                    <h5>150€</h5>
-                    </div>
-                    
-                    <a class="btn_a" href="#popup1"><button class="book_btn mx-3" >UNTERKUNFT BUCHEN</button></a>
+              <!--Kalender--> 
+              <div class="calendar">
+               <table id="wp-calendar">
+                   <caption>November 2020</caption>
                    
-                    </div>
-                    </div>
-        </div>
-      </div>
-     
+                   <thead>
+                   <tr>
+                   <th scope="col" title="Monday">M</th>
+                   <th scope="col" title="Tuesday">T</th>
+                   <th scope="col" title="Wednesday">W</th>
+                   <th scope="col" title="Thursday">T</th>
+                   <th scope="col" title="Friday">F</th>
+                   <th scope="col" title="Saturday">S</th>
+                   <th scope="col" title="Sunday">S</th>
+                   </tr>
+                   </thead>
+
+                 
+                  
+                
+                   <tbody>
+                   
+                   <tr>
+                   <td colspan="3">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td>
+                   </tr>
+                   
+                   <tr>
+                   <td class="occupied">5</td><td class="occupied">6</td><td class="occupied">7</td><td class="occupied">8</td><td>9</td><td>10</td><td>11</td>
+                   </tr>
+                   
+                   <tr>
+                   
+                   <td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+                   </tr>
+                   
+                   <tr>
+                   <td>19</td><td>20</td><td>21</td><td>22</td><td class="selected">23</td><td class="selected">24</td><td>25</td>
+                   </tr>
+                   
+                   <tr>
+                   <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td colspan="2">&nbsp;</td>
+                   </tr>
+                   
+                   </tbody>
+             
+                   
+                   </table>
+                   
+                   <table id="wp-calendar">
+                     <caption>Dezember 2020</caption>
+                     
+                     <thead>
+                     <tr>
+                     <th scope="col" title="Monday">M</th>
+                     <th scope="col" title="Tuesday">T</th>
+                     <th scope="col" title="Wednesday">W</th>
+                     <th scope="col" title="Thursday">T</th>
+                     <th scope="col" title="Friday">F</th>
+                     <th scope="col" title="Saturday">S</th>
+                     <th scope="col" title="Sunday">S</th>
+                     </tr>
+                     </thead>
+ 
+                     
+                    
+                  
+                     <tbody>
+                     
+                     <tr>
+                     <td colspan="3">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td>
+                     </tr>
+                     
+                     <tr>
+                     <td class="occupied">5</td><td class="occupied">6</td><td class="occupied">7</td><td class="occupied">8</td><td>9</td><td>10</td><td>11</td>
+                     </tr>
+                     
+                     <tr>
+                     
+                     <td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+                     </tr>
+                     
+                     <tr>
+                     <td>19</td><td>20</td><td>21</td><td>22</td><td class="selected">23</td><td class="selected">24</td><td>25</td>
+                     </tr>
+                     
+                     <tr>
+                     <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td colspan="2">&nbsp;</td>
+                     </tr>
+                     
+                     </tbody>
+                     
+                     </table>
+          
+                   </div>
+       </div>
+
+            <div class="calc">
+              <h3>IHRE REISEDATEN</h3>
+              <p>23.12.2020 - 23.12.2020 · 1 Nacht</p>
+              
+              <hr>
+              <div class="row d-flex justify-content-between px-3">
+                  <p>Übernachtung</p>
+                  <p>130€</p>
+              </div>
+              
+              <div class="row d-flex justify-content-between px-3">
+                  <p>Steuern & Gebühren</p>
+                  <p>15€</p>
+              </div>
+    
+              <div class="row d-flex justify-content-between px-3">
+                <p>Reinigungsgebühr</p>
+                <p>5€</p>
+            </div>
+              
+              <hr>
+              <div class="row d-flex justify-content-between px-3">
+              <h5>GESAMTPREIS</h5>
+              <h5>150€</h5>
+              </div>
+              
+              <a class="btn_a" href="#popup1"><button class="book_btn mx-3" >UNTERKUNFT BUCHEN</button></a>
+             
+              </div>
+            </div>      
+      </div>      
+      </div>   
       </div>
 
        <!--HAUSÜBERSICHT-->
@@ -247,6 +319,12 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p id="Rating">4.5</p>
+          <div class="ausstattung">
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-swimming-pool"></i>
+            <i class="fas fa-umbrella-beach"></i>
+            <i class="fas fa-parking"></i>
+          </div>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -268,6 +346,12 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p id="Rating">4.5</p>
+          <div class="ausstattung">
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-swimming-pool"></i>
+            <i class="fas fa-umbrella-beach"></i>
+            <i class="fas fa-parking"></i>
+          </div>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -289,6 +373,12 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p id="Rating">4.5</p>
+          <div class="ausstattung">
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-swimming-pool"></i>
+            <i class="fas fa-umbrella-beach"></i>
+            <i class="fas fa-parking"></i>
+          </div>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -310,6 +400,12 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p id="Rating">4.5</p>
+          <div class="ausstattung">
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-swimming-pool"></i>
+            <i class="fas fa-umbrella-beach"></i>
+            <i class="fas fa-parking"></i>
+          </div>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -331,6 +427,12 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p id="Rating">4.5</p>
+          <div class="ausstattung">
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-swimming-pool"></i>
+            <i class="fas fa-umbrella-beach"></i>
+            <i class="fas fa-parking"></i>
+          </div>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -348,7 +450,7 @@
 
      
     <div class="about">
-      <img id="about_img" src="sea-2710932_960_720.jpg" height="380" width="45%" class="ml-5 mr-0 shadow" />
+      <img id="about_img" src="sea-2710932_960_720.jpg" height="380" width="45%" class=" mr-0" />
       <div id="about_us">
         <img src="logo.png" width="220" class="mb-3 "/>
         <h3>Wir finden das ideale Ferienhaus für Sie!</h3>
@@ -357,7 +459,7 @@
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
           ipsum dolor sit amet.</p>
-          <button class="mainbuttondark mt-2">Individuelle Beratung</button>
+          <a href="#contactform"><button class="mainbuttondark mt-2">Individuelle Beratung</button></a>
       </div>
   </div>
 
@@ -374,7 +476,7 @@
         <li><a>Gastgeber werden</a></li>
       </div>
       <div class="flex-column">
-        <li><a>Kontakt</a></li>
+        <li><a href="#contactform">Kontakt</a></li>
         <li><a>&copy 2020 Algarve</a></li>
       </div>
 
@@ -384,7 +486,7 @@
           <h3>Bestätigen und bezahlen</h3>
           <hr>
           <img class="thumbnail" src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg" />
-          <h3>Villa Faro<span style="color: rgb(250, 208, 72);margin-left3px">****</span></h3>
+          <h3>Villa Faro<span style="color: rgb(250, 208, 72);margin-left:3px;">****</span></h3>
           
 
           <a class="close" href="#">X</a>
@@ -485,5 +587,92 @@
           </div>
         </div>
       </div>
+
+      <!--Contactform-->
+
+      <div class="container contact" id="contactform">
+        
+        <div class="row">
+          
+          <div class="col-md-3">
+            <div class="contact-info">
+              <img src="logo.png" alt="image" width="170"/>
+              <h2>KONTAKTIEREN SIE UNS</h2>
+              <h4>Sie haben Fragen oder wünschen eine individuelle Beratung - Kontaktieren Sie uns!</h4>
+              <div id="phone">
+              <i class="fa fa-phone mr-2 mt-1" style="color:rgb(280, 208, 72)"></i><a href=""><p style="color:rgb(280, 208, 72)">+49 909 99 99</p></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="contact-form ">
+              <a class="close_form" href="#">X</a>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="fname">Vorname:</label>
+                <div class="col-sm-10">          
+                <input type="text" class="form-control" id="fname" placeholder="Vornamen eingeben" name="fname">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="lname">Nachname:</label>
+                <div class="col-sm-10">          
+                <input type="text" class="form-control" id="lname" placeholder="Nachnamen eingeben" name="lname">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Ihre Email Adresse" name="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="comment">Nachricht:</label>
+                <div class="col-sm-10">
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+              </div>
+              <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Senden</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container" id="login">
+        <div class="login-form">
+        <div class="main-div">
+            <div class="panel">
+           <img src="logo.png" width="170">
+           <p class="mt-2">Bitte geben Sie Email und Passwort ein</p>
+           </div>
+            <form id="Login">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Passwort">
+                </div>
+                <div class="forgot ml-1">
+                <a style="font-size:13px!important; color:rgb(170, 169, 169)" href="">Passwort vergessen?</a>
+        </div>
+                <button type="submit" class="book_btn">Login</button>
+            </form>
+            </div>
+        </div></div></div>
+
+      <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"
+      ></script>
   </body>
 </html>
