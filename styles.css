@@ -98,8 +98,8 @@ h4 {
 }
 
 .mainbuttondark {
-	color: rgb(26, 25, 25);
-	border: 1px solid rgb(43, 43, 63);
+	color: rgb(49, 49, 49) !important;
+	border: 1px solid rgb(85, 85, 85) !important;
 	border-radius: 5px;
 	padding: 5px 15px;
 	text-decoration: none;
@@ -111,8 +111,8 @@ h4 {
 .mainbutton:hover,
 .book_btn:hover {
 	background: rgb(250, 208, 72);
-	color: white;
-	border: none;
+	color: white !important;
+	border: none !important;
 }
 
 .searchbar {
@@ -132,7 +132,7 @@ h4 {
 .searchbar > input {
 	margin: 0px;
 	height: 37px;
-	background: rgb(254, 255, 228);
+	background: rgb(255, 255, 255);
 	border-radius: 0px;
 	border: none;
 	text-align: center;
@@ -150,10 +150,23 @@ h4 {
 	padding: 5px;
 }
 
+.searchbar_search {
+	background: rgba(242, 242, 242, 0.892);
+	padding: 25px;
+	border-radius: 75px;
+	box-shadow: inset 3px 3px 10px rgba(255, 255, 255, 0.26);
+}
+
 .searchbar_search > input {
-	border: 1.5px solid black !important;
-	margin-right: 4px;
+	margin: 0px;
+	height: 37px;
+	background: rgb(255, 255, 255);
+	border-radius: 0px;
+	border: none;
 	text-align: center;
+	width: 190px;
+	cursor: pointer;
+	font-size: 15px !important;
 }
 
 #usp {
@@ -391,7 +404,7 @@ h3 {
 	overflow-y: scroll;
 }
 
-iframe {
+.resultmap > iframe {
 	height: 150vh;
 }
 
@@ -407,6 +420,28 @@ iframe {
 	justify-content: center;
 	padding-top: 25px !important;
 	border-bottom: 1px solid rgb(207, 207, 207) !important;
+}
+
+.smallheader_main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0);
+	height: auto !important;
+	padding: 0px 0px;
+	display: flex;
+	flex-direction: column !important;
+	align-items: center;
+	justify-content: center;
+	padding-top: 25px !important;
+
+	z-index: 1;
+}
+
+.mainheadnav button,
+.mainheadnav > a {
+	color: white !important;
 }
 
 .searchbar_det {
@@ -1021,27 +1056,32 @@ a:focus {
 	box-shadow: none;
 }
 
+#loginbtnmobile {
+	display: none;
+}
+
 /* QUERIES */
 
 @media screen and (max-width: 768px) {
-	body {
-		width: 100%;
-		overflow-x: hidden;
+	body,
+	.smallheader_main {
+		min-width: 100%;
+		overflow-x: hidden !important;
 		margin: 0 auto;
+	}
+
+	.smallheader_main {
+		padding: 15px 10px !important;
 	}
 
 	p {
 		font-size: 15px;
 	}
 
-	h4,
-	h1,
-	.mainbutton {
-		display: none;
-	}
-
 	#logo_home {
-		height: 15px !important;
+		height: 18px !important;
+		margin-top: 16.5px;
+		margin-right: 10px;
 	}
 
 	#buttons {
@@ -1058,8 +1098,8 @@ a:focus {
 		flex-direction: column !important;
 		justify-content: space-between !important;
 		height: auto !important;
-		padding: 30px 15px 15px 10px !important;
-		margin: 10px auto;
+		padding: 25px 15px 15px 10px !important;
+		margin: 200px auto;
 		margin-left: -15px;
 		width: 80% !important;
 		background: none;
@@ -1074,17 +1114,39 @@ a:focus {
 	}
 
 	header {
+		width: 103% !important;
+		height: 630px;
+	}
+
+	.about {
+		min-width: 105%;
+		margin: 40px auto;
+	}
+
+	#about_img {
 		width: 100% !important;
-		height: 400px;
 	}
 
 	.overlay {
-		display: none !important;
+		min-width: 100% !important;
+	}
+
+	.overlay > h1 {
+		font-size: 26px;
+		margin-top: 50px;
+	}
+
+	.overlay > h4 {
+		font-size: 14px !important;
 	}
 
 	.nav {
 		top: 1%;
 		right: 3%;
+	}
+
+	.det_btn {
+		font-size: 14px !important;
 	}
 
 	.nav > button,
@@ -1100,12 +1162,21 @@ a:focus {
 		margin-left: 0px;
 	}
 
+	#usp {
+		flex-direction: column !important;
+		align-items: center;
+	}
+
 	.footer {
 		display: flex !important;
 		font-size: 10px;
 		flex-direction: column !important;
 		align-items: center !important;
 		height: auto !important;
+		text-align: center;
+		justify-content: center;
+		width: 108vw !important;
+		margin: 0;
 	}
 
 	.bookings {
@@ -1114,6 +1185,10 @@ a:focus {
 		padding: 0px !important;
 		width: 100%;
 		margin: 0;
+	}
+
+	.fa-user-circle {
+		color: rgb(250, 208, 72);
 	}
 
 	.card {
@@ -1203,14 +1278,55 @@ a:focus {
 		margin-left: 0px;
 	}
 
-	.footer {
-		width: 100% !important;
-		margin: 0 auto !important;
-		align-items: center !important;
+	.footer li {
+		font-size: 10px;
 	}
 
-	.footer > div {
-		align-items: center;
-		text-align: center;
+	#footer_img {
+		margin-top: 10px;
+	}
+
+	#logo {
+		width: 80px;
+		height: auto;
+	}
+
+	p,
+	.mainbtn,
+	.fa-envelope,
+	.fa-comments,
+	.fa-trash-alt,
+	.fa-check-double,
+	.fa-globe,
+	.fa-chevron-down,
+	i,
+	.det_btn {
+		font-size: 14px;
+	}
+
+	h2 {
+		font-size: 22px;
+	}
+
+	h3 {
+		font-size: 18px !important;
+	}
+
+	h4,
+	h5 {
+		font-size: 16px !important;
+	}
+
+	#navbar {
+		min-width: 100vw !important;
+		padding: 0px !important;
+	}
+
+	#loginbtn {
+		display: none;
+	}
+
+	#loginbtnmobile {
+		display: inline-block;
 	}
 }

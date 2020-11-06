@@ -33,15 +33,16 @@
   />
   </head>
   <body>
-    <div class="smallheader">
+    <div class="smallheader_main">
       <div class="nav d-flex-column px-3" id="navbar">
         
         <div>
-        <img src="logo.png" height="30"  id="logo" alt="logo"/>
+          <img id="logo_home" src="logo.png" height="30"  id="logo" alt="logo"/>
         </div>
 
-        <div>
-        <a href="#login"><button type="button" class="det_btn">Login</button></a>
+        <div class="mainheadnav">
+        <a id="loginbtn" href="#login"><button type="button" class="det_btn">Login</button></a>
+        <a id="loginbtnmobile" href="#login"><button type="button" class="det_btn"><i class="fas fa-user-circle"></i></button></a>
         <button type="button" class="det_btn">Gastgeber werden</button>
         <button id="langbtn">
           <i class="fas fa-globe"></i><i class="fas fa-chevron-down"></i> 
@@ -54,7 +55,7 @@
 
     <header class="container-fluid mt-0">
 
-      <div class="searchbar">
+      <div class="searchbar mt-3">
         <input
           type="text"
           class="form-control-sm"
@@ -85,15 +86,15 @@
     
   
       <div id="usp" class="d-flex justify-content-center align-items-start col-10 mx-auto my-5 px-1">
-        <div class="d-flex flex-column align-items-center m-3" style="height:auto;width:230px;">
+        <div class="d-flex flex-column align-items-center mx-5 my-3" style="height:auto;width:230px;">
           <img src="icon.PNG" width="60" height="auto"/>
           <p class="mt-2">Persönlicher Service </p>
         </div>
-        <div class="d-flex flex-column align-items-center  m-3" style="height:auto;width:230px;">
+        <div class="d-flex flex-column align-items-center mx-5 my-3" style="height:auto;width:230px;">
           <img src="icon.PNG" width="60" height="auto"/>
           <p class="mt-2">Einfache & sichere Buchung </p>
         </div>
-        <div class="d-flex flex-column align-items-center  m-3" style="height:auto;width:230px;">
+        <div class="d-flex flex-column align-items-center mx-5 my-3" style="height:auto;width:230px;">
           <img src="icon.PNG" width="60" height="auto"/>
           <p class="mt-2">Hochwertige Ferienhäuser</p>
         </div>
@@ -285,6 +286,7 @@
     </div>
 
     <div class="footer d-flex row">
+      
       <div class="flex-column">
         <li><a>Impressum</a></li>
         <li><a>Datenschutzerklärung</a></li>
@@ -295,8 +297,11 @@
       </div>
       <div class="flex-column">
         <li><a href="#contactform">Kontakt</a></li>
-        <li><a>&copy 2020 Algarve</a></li>
+        <li><a>&copy 2020 Algarve4u</a></li>
       </div>
+      <div class="flex-column">
+        <img id="footer_img" src="logo.png" width="150"/>
+      </div>  
       </div>
 
 

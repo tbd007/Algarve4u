@@ -17,10 +17,6 @@
   href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
   rel="stylesheet"
 />
-<link
-  href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
-  rel="stylesheet"
-/>
     <link
     href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Open+Sans&family=Poppins:wght@300&display=swap"
     rel="stylesheet"
@@ -45,7 +41,7 @@
       <div class="nav d-flex justify-content-between px-3" id="navbar">
         
         <div>
-        <img src="logo.png" height="30"  id="logo" alt="logo"/>
+          <a href="index.html"><img src="logo.png" height="30"  id="logo" alt="logo"/></a>
         </div>
 
         <div>
@@ -57,21 +53,22 @@
         </div>
       </div>
 
-        <div class="searchbar_search my-3 mx-3">
-          <input
-            type="text"
-            class="form-control-sm"
-            placeholder="Wo soll es hingehen?"
-          />
-          <input placeholder="Check-in"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" />
-          <input placeholder="Check-out"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" " />
-          <input
-            type="text"
-            class="form-control-sm"
-            placeholder="Anzahl der Gäste"
-          />
-          <button id="det_search_btn" type="submit"><i class="fas fa-1x fa-search"></i></button>
-        </div>
+      <div class="searchbar_search my-1 mx-2">
+        <input
+        type="text"
+        class="form-control-sm"
+        placeholder="Wo soll es hingehen?"
+      />
+      <input placeholder="Check-in"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" />
+      <input placeholder="Check-out"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" " />
+      <input
+        type="text"
+        class="form-control-sm"
+        placeholder="Anzahl der Gäste"
+      />
+      <button id="det_search_btn" type="submit"><i class="fas fa-1x fa-search"></i></button>
+      </div>
+
 
       </div>
     </div>
@@ -302,9 +299,15 @@
              
               </div>
             </div>      
-      </div>      
+      </div>    
+      
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203882.7338570386!2d-8.044995970118421!3d37.01772277787762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0552e72290faa7%3A0x8d73c2d4494aff5a!2sFaro%2C%20Portugal!5e0!3m2!1sde!2sat!4v1604577528220!5m2!1sde!2sat" width="60%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    
       </div>   
+   
       </div>
+
+
 
        <!--HAUSÜBERSICHT-->
     <div id="overview" class="px-5 mt-5"><h3>Neue Ferienhäuser</h3></div>
@@ -479,6 +482,10 @@
         <li><a href="#contactform">Kontakt</a></li>
         <li><a>&copy 2020 Algarve</a></li>
       </div>
+      <div class="flex-column">
+        <img src="logo.png" width="150"/>
+      </div> 
+    </div>
 
 
       <div id="popup1" class="pop_overlay">

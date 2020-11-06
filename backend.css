@@ -11,6 +11,20 @@ body {
 	max-width: 100%;
 }
 
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(250, 208, 72);
+}
+
 .smallheader {
 	background: white;
 	height: auto !important;
@@ -39,7 +53,7 @@ body {
 	color: rgb(250, 208, 72) !important;
 }
 
-.fa-envelope {
+.fa-camera {
 	font-size: 18px;
 	color: rgb(250, 208, 72) !important;
 }
@@ -47,7 +61,7 @@ body {
 .fa-check-double {
 	font-size: 18px;
 	color: rgba(250, 208, 72);
-	background: rgb(44, 52, 94);
+	background: rgb(43, 43, 63);
 	padding: 10px;
 	margin-right: 10px;
 	margin-bottom: 10px;
@@ -62,7 +76,7 @@ body {
 	margin-right: 10px;
 	margin-bottom: 10px;
 	border-radius: 7px;
-	background: rgb(44, 52, 94);
+	background: rgb(43, 43, 63);
 	padding: 10px;
 }
 
@@ -89,7 +103,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: rgb(44, 52, 94);
+	background: rgb(43, 43, 63);
 	margin-left: -7px;
 }
 
@@ -166,7 +180,8 @@ body {
 	border-radius: 5px;
 	width: 60%;
 	height: 90vh;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	position: relative;
 	transition: all 2s ease-in-out;
 }
@@ -244,17 +259,19 @@ a {
 .footer {
 	display: flex;
 	justify-content: space-around !important;
-	width: 101vw !important;
-	padding: 45px 0px !important;
+	width: 102vw !important;
+	padding: 45px 10px !important;
 	height: 150px !important;
 	margin-top: 100px;
-	background: #ebebeb;
+	margin-bottom: 0;
+	margin-left: 0px;
+	background: rgb(43, 43, 63);
 	padding: 20px;
 	border-top: 1px solid rgb(204, 203, 203);
 }
 
 .footer > div > li > a {
-	color: rgb(63, 63, 63) !important;
+	color: rgb(216, 215, 215) !important;
 }
 
 .footer > div > li > a:hover {
@@ -279,7 +296,7 @@ a {
 	padding: 0%;
 	height: 370px !important;
 	visibility: hidden;
-	position: fixed;
+	position: absolute;
 	top: 10%;
 	bottom: 0;
 	left: 0;
@@ -307,7 +324,7 @@ a {
 	opacity: 1;
 }
 .col-md-4 {
-	background: rgba(44, 52, 94);
+	background: rgb(43, 43, 63);
 	padding: 5%;
 	border-top-left-radius: 0.5rem;
 	border-bottom-left-radius: 0.5rem;
@@ -352,7 +369,7 @@ a {
 	font-weight: 300;
 }
 .contact-form button {
-	background: rgb(44, 52, 94);
+	background: rgb(43, 43, 63);
 	color: #fff;
 	font-weight: 600;
 	width: 25%;
@@ -376,4 +393,189 @@ button:active,
 a:focus {
 	outline: none !important;
 	box-shadow: none;
+}
+a {
+	cursor: pointer;
+}
+
+.darkbtn {
+	background: rgb(43, 43, 63) !important;
+	padding: 10px 15px;
+	width: 96%;
+	border-radius: 5px;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	border: 1px solid rgb(250, 208, 72);
+	margin: 10px auto;
+	align-self: flex-end;
+}
+
+.darkbtn:hover {
+	background: rgb(250, 208, 72);
+	color: white;
+	border: none;
+	transition: all 0.2s ease-in;
+}
+
+#chat_popup {
+	position: absolute;
+	top: 0;
+	margin-bottom: 0;
+	width: 80%;
+	left: 10%;
+	height: 70vh !important;
+}
+
+@media screen and (max-width: 768px) {
+	body,
+	html {
+		overflow-x: hidden !important;
+		min-height: 80vh !important;
+	}
+
+	p,
+	.mainbtn,
+	.fa-envelope,
+	.fa-comments,
+	.fa-trash-alt,
+	.fa-check-double,
+	.fa-globe,
+	.fa-chevron-down,
+	i,
+	.det_btn {
+		font-size: 14px;
+	}
+
+	h2 {
+		font-size: 22px;
+	}
+
+	h3 {
+		font-size: 18px !important;
+	}
+
+	h4,
+	h5 {
+		font-size: 16px !important;
+	}
+	.footer {
+		min-width: 105vw !important;
+		margin: 0px;
+		display: flex;
+		height: auto !important;
+		align-items: center;
+		justify-content: space-around;
+		text-align: center;
+		margin-top: 60px;
+	}
+
+	.footer li {
+		font-size: 10px;
+	}
+
+	.buchung,
+	.message {
+		width: 100%;
+		margin: 5px auto;
+		padding: 4px;
+	}
+
+	.thumb {
+		width: 40px;
+		height: 40px;
+	}
+
+	#anreise,
+	#abreise,
+	#uhrzeit,
+	#datum {
+		display: none;
+	}
+
+	.fa-envelope {
+		margin-top: 8px;
+	}
+
+	#message-title {
+		max-width: 50px;
+	}
+
+	.data {
+		width: 95%;
+	}
+
+	#logo {
+		width: 80px;
+		height: auto;
+	}
+
+	.col-md-4,
+	.col-md-8 {
+		border-radius: 0px;
+	}
+
+	.close_form {
+		position: absolute;
+		top: 3%;
+		right: 3%;
+		font-size: 10px;
+	}
+
+	#phone {
+		margin-top: 10px !important;
+		font-size: 20px !important;
+	}
+
+	.phone,
+	.fa-phone {
+		font-size: 18px;
+	}
+
+	.book_btn {
+		border-radius: 7px;
+		font-size: 16px;
+		padding: 5px;
+	}
+
+	#footer_logo {
+		margin-top: 10px;
+	}
+
+	.contact-form {
+		margin-top: 15px;
+	}
+}
+
+@media screen and (min-width: 540px) {
+	.mainwrap {
+		min-height: 100%;
+		height: auto !important;
+	}
+
+	.push {
+		flex: 1;
+		height: 200px;
+	}
+
+	body {
+		min-height: 100vh;
+	}
+}
+
+@media screen and (min-width: 1024) {
+	.mainwrap {
+		min-height: 100%;
+		height: auto !important;
+		margin: 0;
+	}
+
+	.push,
+	.footer {
+		height: 200px;
+	}
+
+	body {
+		min-height: 100vh;
+	}
 }

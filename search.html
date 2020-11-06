@@ -36,7 +36,7 @@
       <div class="nav d-flex justify-content-between px-3" id="navbar">
         
         <div>
-        <img src="logo.png" height="30"  id="logo" alt="logo"/>
+          <a href="index.html"><img src="logo.png" height="30"  id="logo" alt="logo"/></a>
         </div>
 
         <div>
@@ -48,20 +48,20 @@
         </div>
       </div>
 
-        <div class="searchbar_search my-3 mx-3">
+        <div class="searchbar_search my-1 mx-2">
           <input
-            type="text"
-            class="form-control-sm"
-            placeholder="Wo soll es hingehen?"
-          />
-          <input placeholder="Check-in"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" />
-          <input placeholder="Check-out"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" " />
-          <input
-            type="text"
-            class="form-control-sm"
-            placeholder="Anzahl der Gäste"
-          />
-          <button id="det_search_btn" type="submit"><i class="fas fa-1x fa-search"></i></button>
+          type="text"
+          class="form-control-sm"
+          placeholder="Wo soll es hingehen?"
+        />
+        <input placeholder="Check-in"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" />
+        <input placeholder="Check-out"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" " />
+        <input
+          type="text"
+          class="form-control-sm"
+          placeholder="Anzahl der Gäste"
+        />
+        <button id="det_search_btn" type="submit"><i class="fas fa-1x fa-search"></i></button>
         </div>
 
       </div>
@@ -79,6 +79,7 @@
           <button class="mainbuttondark">Beliebtheit</button>
           <button class="mainbuttondark">Preis aufsteigend</button>
           <button class="mainbuttondark">Preis absteigend</button>
+          <button class="mainbuttondark"><i class="fas fa-sliders-h"></i></button>
         </div>
 
         <div class="conatiner-fluid flex-column align-items-center" id="houselist">
@@ -297,7 +298,7 @@
         </div>
       </div>
 
-        <div>
+        <div class="resultmap">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1626275.3903093827!2d-9.316370650597877!3d37.2401353089236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0554ee55d1cfef%3A0x80e2652e12910e45!2sDistrikt%20Faro%2C%20Portugal!5e0!3m2!1sde!2sat!4v1603878414107!5m2!1sde!2sat" width="600" height="150%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
 </div>
@@ -332,6 +333,9 @@
         <li><a href="#contactform">Kontakt</a></li>
         <li><a>&copy 2020 Algarve</a></li>
       </div>
+      <div class="flex-column">
+        <img src="logo.png" width="150"/>
+      </div> 
       </div>
 
       <!-- Contactform-->
