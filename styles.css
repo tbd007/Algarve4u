@@ -1065,7 +1065,7 @@ a:focus {
 @media screen and (max-width: 768px) {
 	body,
 	.smallheader_main {
-		min-width: 100%;
+		width: 99% !important;
 		overflow-x: hidden !important;
 		margin: 0 auto;
 	}
@@ -1114,7 +1114,7 @@ a:focus {
 	}
 
 	header {
-		width: 103% !important;
+		width: 100% !important;
 		height: 650px !important;
 	}
 
@@ -1167,8 +1167,10 @@ a:focus {
 	#usp {
 		flex-direction: column !important;
 		align-items: center;
-		width: 90vw !important;
+		width: 100% !important;
 		margin: 0px auto !important;
+		margin-left: 0px !important;
+		margin-right: 0px !important;
 	}
 
 	.footer {
@@ -1179,8 +1181,9 @@ a:focus {
 		height: auto !important;
 		text-align: center;
 		justify-content: center;
-		width: 108vw !important;
+		width: 105vw !important;
 		margin: 0;
+		overflow-x: hidden !important;
 	}
 
 	.bookings {
@@ -1344,6 +1347,7 @@ a:focus {
 	.loginwrap,
 	#Login {
 		min-width: 99% !important;
+		width: 100%;
 		top: 10%;
 		margin: 0 auto;
 	}
@@ -1355,5 +1359,10 @@ a:focus {
 	.mainheadnav {
 		align-items: center;
 		margin-top: -5px;
+	}
+
+	.contents {
+		width: 100vw !important;
+		overflow-x: hidden;
 	}
 }
