@@ -1368,4 +1368,18 @@ a:focus {
 		width: 100vw !important;
 		overflow-x: hidden;
 	}
+
+	.contact-info {
+		margin-top: 10%;
+		margin-left: 10%;
+	}
+	.contact-info img {
+		margin-bottom: 15%;
+	}
+	.contact-info h2 {
+		margin-bottom: 10%;
+		color: white;
+		font-size: 20px !important;
+		font-weight: 600;
+	}
 }
