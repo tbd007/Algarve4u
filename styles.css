@@ -1170,8 +1170,8 @@ a:focus {
 	#usp {
 		flex-direction: column !important;
 		align-items: center;
-		width: 100vw !important;
-		margin-left: 0px !important;
+		width: 90vw !important;
+		margin: 0px auto !important;
 	}
 
 	.footer {
