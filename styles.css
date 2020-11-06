@@ -864,7 +864,7 @@ textarea {
 	padding: 0%;
 	height: 370px !important;
 	visibility: hidden;
-	position: fixed;
+	position: absolute;
 	top: 10%;
 	bottom: 0%;
 	left: 0;
@@ -1377,4 +1377,6 @@ a:focus {
 	.col-md-8 {
 		border-radius: 0px;
 	}
+
+	.contact;
 }
