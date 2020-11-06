@@ -1063,9 +1063,6 @@ a:focus {
 /* QUERIES */
 
 @media screen and (max-width: 768px) {
-	* {
-		overflow-x: hidden !important;
-	}
 	body,
 	.smallheader_main {
 		min-width: 100%;
