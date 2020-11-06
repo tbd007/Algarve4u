@@ -1102,7 +1102,7 @@ a:focus {
 		justify-content: space-between !important;
 		height: auto !important;
 		padding: 25px 15px 15px 10px !important;
-		margin: 200px auto;
+		margin: 10px auto;
 		margin-left: -15px;
 		width: 80% !important;
 		background: none;
@@ -1118,7 +1118,7 @@ a:focus {
 
 	header {
 		width: 103% !important;
-		height: 630px;
+		height: 650px !important;
 	}
 
 	.about {
@@ -1131,7 +1131,8 @@ a:focus {
 	}
 
 	.overlay {
-		min-width: 100% !important;
+		width: 100% !important;
+		height: auto;
 	}
 
 	.overlay > h1 {
@@ -1140,7 +1141,8 @@ a:focus {
 	}
 
 	.overlay > h4 {
-		font-size: 14px !important;
+		font-size: 13px !important;
+		width: 85%;
 	}
 
 	.nav {
@@ -1194,6 +1196,7 @@ a:focus {
 
 	.fa-user-circle {
 		color: rgb(250, 208, 72);
+		margin-top: 10px;
 	}
 
 	.card {
@@ -1350,5 +1353,10 @@ a:focus {
 
 	#Login > div > input {
 		width: 100% !important;
+	}
+
+	.mainheadnav {
+		align-items: center;
+		margin-top: -5px;
 	}
 }
