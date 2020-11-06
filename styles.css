@@ -1222,8 +1222,9 @@ a:focus {
 	}
 
 	#about_us {
-		width: 100vw;
+		width: 99vw !important;
 		padding: 0px 20px;
+		margin: 0px important!;
 	}
 
 	#profilepic {
