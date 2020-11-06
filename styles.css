@@ -42,14 +42,8 @@ header {
 	width: 60%;
 }
 
-#logo {
-	margin-bottom: 17px;
-	margin-left: 5px;
-}
-
 #logo_home {
-	margin-bottom: 17px;
-	margin-left: 5px;
+	margin-top: 10px !important;
 	position: absolute !important;
 	left: 1% !important;
 	top: 2%;
