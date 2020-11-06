@@ -1378,5 +1378,7 @@ a:focus {
 		border-radius: 0px;
 	}
 
-	.contact;
+	.btn-default {
+		width: 100px !important;
+	}
 }
