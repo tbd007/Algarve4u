@@ -1102,7 +1102,9 @@ a:focus {
 		margin: 10px auto;
 		margin-left: -15px;
 		width: 80% !important;
-		background: none;
+
+		box-shadow: inset 3px 3px 10px rgba(255, 255, 255, 0.46);
+		border-radius: 45px;
 	}
 
 	input,
