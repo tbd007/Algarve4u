@@ -1469,4 +1469,9 @@ a:focus {
 	.card-img-top {
 		margin-top: 0px !important;
 	}
+
+	.mainbuttondark {
+		display: flex;
+		align-items: center;
+	}
 }
