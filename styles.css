@@ -145,10 +145,8 @@ h4 {
 }
 
 .searchbar_search {
-	background: rgba(242, 242, 242, 0.892);
+	background: transparent;
 	padding: 25px;
-	border-radius: 75px;
-	box-shadow: inset 3px 3px 10px rgba(255, 255, 255, 0.26);
 }
 
 .searchbar_search > input {
@@ -405,7 +403,7 @@ h3 {
 /*Details*/
 
 .smallheader {
-	background: white;
+	background: rgb(232, 232, 232) !important;
 	height: auto !important;
 	padding: 0px 0px;
 	display: flex;
@@ -447,7 +445,7 @@ h3 {
 	width: 100vw !important;
 	border-radius: 2px;
 	border: 1px 1px 0px 1px solid rgb(192, 191, 191);
-	background-color: rgb(189, 189, 189);
+	background-color: transparent;
 	margin-bottom: -2px;
 }
 
@@ -657,7 +655,7 @@ h5 {
 }
 
 #wp-calendar tbody td {
-	color: #666;
+	color: rgb(77, 77, 77);
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 	padding: 13px;
 	text-align: center;
@@ -705,13 +703,13 @@ h5 {
 #wp-calendar .selected {
 	color: rgb(99, 98, 98);
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-	background: rgb(255, 254, 251);
-	box-shadow: inset 2px 2px 5px rgb(223, 223, 222),
-		inset 2px 2px 5px rgb(223, 223, 222);
+	background: rgb(159, 223, 235);
+	box-shadow: inset 2px -2px 5px rgb(138, 137, 137),
+		inset -2px 2px 5px rgb(179, 198, 207);
 }
 
 #wp-calendar .occupied {
-	color: rgb(172, 172, 172);
+	color: rgb(233, 232, 232);
 	font-size: 15px !important;
 	text-decoration: line-through;
 }
@@ -867,7 +865,8 @@ textarea {
 	border-radius: 7px !important;
 }
 
-.close_form {
+.close_form,
+.close_log {
 	position: absolute;
 	top: 20px;
 	right: 30px;
@@ -998,6 +997,8 @@ a {
 	margin: 10px auto 30px;
 	max-width: 38%;
 	padding: 50px 70px 50px 71px;
+	position: relative;
+	border: 1px solid rgb(190, 190, 190);
 }
 
 .login-form .form-group {
@@ -1052,6 +1053,18 @@ a:focus {
 
 #loginbtnmobile {
 	display: none;
+}
+
+#mapbtn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 5px;
+}
+
+#searchresults {
+	position: relative;
+	padding-top: 20px;
 }
 
 /* QUERIES */
@@ -1454,9 +1467,9 @@ a:focus {
 		height: 20px;
 	}
 
-	.resultmap > iframe {
-		height: 300px !important;
-		width: 100% !important;
+	.resultmap,
+	#mapbtn {
+		display: none;
 	}
 
 	.card-result,

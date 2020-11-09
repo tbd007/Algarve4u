@@ -55,7 +55,7 @@
           placeholder="Wohin?"
         />
         <input placeholder="Check-in"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" />
-        <input placeholder="Check-out"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" " />
+        <input placeholder="Check-out"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
         <input
           type="text"
           class="form-control-sm"
@@ -67,10 +67,10 @@
       </div>
     </div>
   
-    <div class="maincontainer">
+    <div class="maincontainer" id="maincontainer">
       <!--SUCHERGEBNISSE-->
       <div id="searchresults">
-        
+        <a href="#" onclick="toggle_visibility()" id="mapbtn">Karte ein/aus</a>
         <div
           id="buttons"
           class="col-12 mx-auto d-flex justify-content-center align-items-center"
@@ -80,9 +80,11 @@
           <button class="mainbuttondark">Preis aufsteigend</button>
           <button class="mainbuttondark">Preis absteigend</button>
           <button class="mainbuttondark"><i class="fas fa-sliders-h"></i></button>
+          
         </div>
-
+       
         <div class="container-fluid flex-column align-items-center" id="houselist">
+          
           <div class="card-result">
             <img
               src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
@@ -297,10 +299,33 @@
 
         </div>
       </div>
-
-        <div class="resultmap">
+      
+        <div class="resultmap" id="resultmap">
+          
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1626275.3903093827!2d-9.316370650597877!3d37.2401353089236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0554ee55d1cfef%3A0x80e2652e12910e45!2sDistrikt%20Faro%2C%20Portugal!5e0!3m2!1sde!2sat!4v1603878414107!5m2!1sde!2sat" width="600" height="150%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
+        <script>
+
+          function toggle_visibility(id) {
+            
+          const e = document.getElementById("resultmap");
+          const mc = document.getElementById("maincontainer");
+          const hl = document.getElementById("maincontainer");
+
+          if (e.style.display == "block"){
+              e.style.display = "none";
+              mc.style.display="flex";
+              mc.style.width="100vw";
+              mc.style.justifyContent="center";
+              hl.style.flexDirection="row";
+              hl.style.width="100vw!important";
+              hl.style.height="auto";
+          }else{
+              e.style.display = "block";
+          }
+          }
+        </script>
+
 </div>
     </div>
 
@@ -395,8 +420,12 @@
 
       <div class="container" id="login">
         <div class="login-form">
+          
         <div class="main-div">
+            
+          <a class="close_log" href="#">X</a> 
             <div class="panel">
+             
            <img src="logo.png" width="170">
            <p class="mt-2">Bitte geben Sie Email und Passwort ein</p>
            </div>
