@@ -1072,6 +1072,10 @@ a:focus {
 		font-size: 15px;
 	}
 
+	h2 {
+		font-size: 20px !important;
+	}
+
 	#logo_home {
 		height: 18px !important;
 		margin-top: 16.5px !important;
@@ -1403,8 +1407,12 @@ a:focus {
 		overflow-x: hidden;
 	}
 
+	.fa-chevron-down {
+		margin-right: 5px !important;
+	}
+
 	.smallheader {
-		padding: 5px;
+		padding: 7px !important;
 		margin-top: 0px;
 	}
 
@@ -1412,6 +1420,7 @@ a:focus {
 		display: flex;
 		width: 340px !important;
 		padding: 10px 10px 5px 10px;
+		margin-top: 10px !important;
 	}
 
 	.searchbar_search input {
