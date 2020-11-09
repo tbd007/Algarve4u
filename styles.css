@@ -1074,7 +1074,7 @@ a:focus {
 
 	#logo_home {
 		height: 18px !important;
-		margin-top: 16.5px;
+		margin-top: 16.5px !important;
 		margin-right: 10px;
 	}
 
