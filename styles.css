@@ -1416,6 +1416,26 @@ a:focus {
 		font-size: 12px !important;
 	}
 
+	#sort {
+		display: none;
+	}
+
+	#buttons {
+		display: flex;
+		flex-direction: row !important;
+		padding: 10px;
+		flex-wrap: wrap;
+		justify-content: center !important;
+		align-items: center;
+		width: 90%;
+	}
+
+	#buttons button {
+		width: auto;
+		font-size: 12px !important;
+		margin: 5px;
+	}
+
 	.smallheader {
 		padding: 7px !important;
 		margin-top: 0px;
@@ -1444,5 +1464,9 @@ a:focus {
 		flex-direction: column;
 		width: 90vw !important;
 		margin: 10px auto;
+	}
+
+	.card-img-top {
+		margin-top: 0px !important;
 	}
 }
