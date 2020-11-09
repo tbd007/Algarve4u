@@ -69,6 +69,16 @@ h4 {
 	width: 100%;
 }
 
+.mid_menu {
+	position: absolute;
+	top: 50% !important;
+	left: 36%;
+}
+
+.mid_menu a button {
+	color: white;
+}
+
 .fa-search,
 .fa-chevron-down,
 .fa-globe {
@@ -112,7 +122,7 @@ h4 {
 .searchbar {
 	position: absolute;
 	top: 15%;
-	left: 15%;
+	left: 18%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -429,6 +439,12 @@ h3 {
 	padding-top: 25px !important;
 
 	z-index: 1;
+}
+
+.mainheadnav {
+	position: absolute;
+	right: 1%;
+	top: 50%;
 }
 
 .mainheadnav button,
@@ -874,8 +890,8 @@ textarea {
 	font-size: 35px;
 	font-weight: bold;
 	text-decoration: none;
-	color: rgb(29, 28, 28);
-	border: 1px solid rgb(177, 175, 175);
+	color: rgb(107, 107, 107) !important;
+	border: 1px solid rgb(153, 153, 153);
 	padding: 3px 7px;
 	border-radius: 7px;
 }
@@ -1372,6 +1388,7 @@ a:focus {
 
 	.mainheadnav {
 		align-items: center;
+		justify-content: space-between;
 		margin-top: -5px;
 	}
 
