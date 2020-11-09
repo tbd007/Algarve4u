@@ -1445,7 +1445,7 @@ a:focus {
 		display: flex;
 		width: 340px !important;
 		padding: 10px 10px 5px 10px;
-		margin-top: 10px !important;
+		margin-left: 0px !important;
 	}
 
 	.searchbar_search input {
