@@ -1375,4 +1375,60 @@ a:focus {
 	.btn-default {
 		width: 100px !important;
 	}
+
+	.maincontainer {
+		display: flex;
+		flex-direction: column-reverse;
+		border-top: 1px solid rgb(231, 231, 231);
+		width: 100% !important;
+		margin: 0 auto;
+		padding: 0px;
+		margin-left: 0px;
+	}
+
+	#searchresults,
+	#houselist,
+	.card-result,
+	body,
+	.smallheader,
+	.searchbar_search,
+	.about,
+	#about_search,
+	#about_img,
+	html {
+		width: 100vw !important;
+	}
+
+	html {
+		overflow-x: hidden;
+	}
+
+	.smallheader {
+		padding: 5px;
+		margin-top: 0px;
+	}
+
+	.searchbar_search {
+		display: flex;
+		width: 340px !important;
+		padding: 10px 10px 5px 10px;
+	}
+
+	.searchbar_search input {
+		width: 30px;
+		font-size: 8px !important;
+		height: 20px;
+	}
+
+	.resultmap > iframe {
+		height: 300px !important;
+		width: 100% !important;
+	}
+
+	.card-result,
+	.card-img-top {
+		flex-direction: column;
+		width: 90vw !important;
+		margin: 10px auto;
+	}
 }
