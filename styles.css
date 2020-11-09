@@ -1489,7 +1489,7 @@ a:focus {
 	}
 
 	.card-result,
-	.card-img-top {
+	.card_result > .card-img-top {
 		flex-direction: column;
 		width: 90vw !important;
 		margin: 10px auto;
