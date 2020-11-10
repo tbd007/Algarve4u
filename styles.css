@@ -507,6 +507,10 @@ h3 {
 	font-size: 15px;
 }
 
+.det_list {
+	margin-bottom: 10px;
+}
+
 .det_desc > p {
 	font-size: 15px;
 	font-weight: 400;
@@ -716,11 +720,12 @@ h5 {
 }
 
 #wp-calendar .selected {
-	color: rgb(99, 98, 98);
+	color: rgb(218, 216, 216);
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-	background: rgb(159, 223, 235);
-	box-shadow: inset 2px -2px 5px rgb(138, 137, 137),
-		inset -2px 2px 5px rgb(179, 198, 207);
+	background: rgb(44, 52, 94);
+	box-shadow: inset 2px -2px 5px rgb(78, 90, 109),
+		inset -2px 2px 5px rgb(34, 49, 56);
+	border: 1px solid white;
 }
 
 #wp-calendar .occupied {
@@ -1502,5 +1507,79 @@ a:focus {
 	.mainbuttondark {
 		display: flex;
 		align-items: center;
+	}
+
+	.grid-container_gallery {
+		display: flex;
+		flex-direction: column;
+		height: auto !important;
+	}
+
+	.gallery_pics {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		height: 220px;
+		grid-gap: 7px;
+	}
+
+	.det_wrap {
+		width: 100%;
+	}
+
+	.calc {
+		position: relative;
+		width: 100%;
+		right: 0px;
+		padding: 7px;
+	}
+
+	.cal_two {
+		display: none;
+	}
+
+	#wp-calendar {
+		max-width: 100% !important;
+		font-size: 15px;
+
+		margin-left: -17px;
+	}
+
+	.calwrap {
+		padding: 0px;
+	}
+
+	.fa-chevron-left {
+		position: absolute;
+		top: 82%;
+		left: 0;
+	}
+
+	.fa-chevron-right {
+		position: absolute;
+		top: 82%;
+		right: 0;
+	}
+
+	#wp-calendar caption {
+		color: rgb(71, 71, 71);
+		font-size: 14px;
+		padding: 15px 0;
+		text-align: center;
+		z-index: -99;
+		padding-left: 25px !important;
+	}
+
+	#det_map {
+		width: 100% !important;
+		margin: 0 auto !important;
+	}
+
+	.ausstattung_det p {
+		font-size: 11px;
+		width: 100%;
+	}
+	.amenity_right {
+		margin-left: 15px;
 	}
 }

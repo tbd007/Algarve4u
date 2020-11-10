@@ -311,6 +311,7 @@
           const e = document.getElementById("resultmap");
           const mc = document.getElementById("maincontainer");
           const hl = document.getElementById("maincontainer");
+          const sr = document.getElementById("searchresults");
 
           if (e.style.display == "block"){
               e.style.display = "none";
@@ -320,6 +321,7 @@
               hl.style.flexDirection="row";
               hl.style.width="100vw!important";
               hl.style.height="auto";
+              sr.style.width="99vw";
           }else{
               e.style.display = "block";
           }
