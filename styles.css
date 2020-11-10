@@ -156,7 +156,8 @@ h4 {
 
 .searchbar_search {
 	background: transparent;
-	padding: 25px;
+	padding: 15px 10px;
+	margin-bottom: 0px !important;
 }
 
 .searchbar_search > input {
@@ -412,7 +413,7 @@ h3 {
 /*Details*/
 
 .smallheader {
-	background: rgb(232, 232, 232) !important;
+	background: rgb(206, 206, 206) !important;
 	height: auto !important;
 	padding: 0px 0px;
 	display: flex;
@@ -768,7 +769,8 @@ label {
 	border-radius: 5px;
 	width: 60%;
 	height: 90vh;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	position: relative;
 	transition: all 2s ease-in-out;
 }
@@ -780,8 +782,8 @@ label {
 }
 .popup .close {
 	position: absolute;
-	top: 20px;
-	right: 30px;
+	top: 10px;
+	right: 10px;
 	transition: all 200ms;
 	font-size: 35px;
 	font-weight: bold;
@@ -1477,15 +1479,17 @@ a:focus {
 
 	.searchbar_search {
 		display: flex;
-		width: 340px !important;
-		padding: 10px 10px 5px 10px;
+		width: 98% !important;
+		padding: 10px 0px 0px 0px !important;
+		margin-bottom: 0px !important;
 		margin-left: 0px !important;
 	}
 
 	.searchbar_search input {
-		width: 30px;
-		font-size: 8px !important;
+		width: 40px;
+		font-size: 10px !important;
 		height: 20px;
+		border-radius: 0px !important;
 	}
 
 	.resultmap,
@@ -1581,5 +1585,31 @@ a:focus {
 	}
 	.amenity_right {
 		margin-left: 15px;
+	}
+
+	.popup {
+		margin: 50px auto;
+		padding: 10px;
+		background: white;
+		border-radius: 5px;
+		width: 98%;
+		height: 90vh;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		position: relative;
+		transition: all 2s ease-in-out;
+	}
+
+	.thumbnail {
+		position: relative;
+		top: 0%;
+		left: 1%;
+		object-fit: fill;
+		height: 120px;
+		width: 150px;
+	}
+
+	.paymentoptions input {
+		width: auto !important;
 	}
 }
