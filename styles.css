@@ -69,6 +69,7 @@ header {
 	position: absolute !important;
 	left: 1% !important;
 	top: 2%;
+	height: 30px !important;
 }
 
 h1 {
@@ -1454,13 +1455,32 @@ a:focus {
 @media screen and (max-width: 768px) {
 	body,
 	.smallheader_main {
-		width: 99% !important;
-		overflow-x: hidden !important;
-		margin: 0 auto;
+		width: 99vw !important;
+		overflow: hidden !important;
+		margin: 0px;
+		height: auto;
 	}
 
 	.smallheader_main {
-		padding: 15px 10px !important;
+		padding: 0px 10px !important;
+		height: 40px !important;
+		margin-top: -10px !important;
+	}
+
+	.fa-bars {
+		display: block;
+		color: rgb(250, 208, 72);
+		margin-right: 7px;
+		margin-top: 5px;
+		font-size: 20px;
+	}
+
+	.mid_menu,
+	.mid_menu_sub,
+	#hostbtn,
+	.mainheadnav label,
+	#lang {
+		display: none;
 	}
 
 	p {
@@ -1472,9 +1492,10 @@ a:focus {
 	}
 
 	#logo_home {
-		height: 18px !important;
-		margin-top: 16.5px !important;
+		height: 22px !important;
+		margin-top: 17.5px !important;
 		margin-right: 10px;
+		margin-left: 5px;
 	}
 
 	#buttons {
@@ -1493,9 +1514,9 @@ a:focus {
 		height: auto !important;
 		padding: 25px 15px 15px 10px !important;
 		margin: 10px auto;
-		margin-left: -15px;
+		margin-left: -30px;
+		margin-bottom: 20px !important;
 		width: 80% !important;
-
 		box-shadow: inset 3px 3px 10px rgba(255, 255, 255, 0.46);
 		border-radius: 45px;
 	}
@@ -1509,7 +1530,7 @@ a:focus {
 	}
 
 	header {
-		width: 100% !important;
+		width: 100vw !important;
 		height: 650px !important;
 	}
 
@@ -1568,7 +1589,7 @@ a:focus {
 		align-items: center;
 		width: 100% !important;
 		margin: 15px auto !important;
-		margin-left: 5px !important;
+		margin-left: 15px !important;
 		margin-right: 0px !important;
 	}
 
@@ -1625,7 +1646,7 @@ a:focus {
 
 	#about_us {
 		width: 99vw !important;
-		padding: 20px;
+		padding: 20px 25px;
 		margin: 0px !important;
 		justify-content: center;
 	}
@@ -1819,13 +1840,14 @@ a:focus {
 	.searchbar_search,
 	.about,
 	#about_search,
-	#about_img,
-	html {
+	#about_img {
 		width: 100vw !important;
 	}
 
-	html {
+	html,
+	body {
 		overflow-x: hidden;
+		margin: 0px !important;
 	}
 
 	.fa-chevron-down {
@@ -2005,6 +2027,7 @@ a:focus {
 	html {
 		overflow-x: hidden !important;
 		min-height: 80vh !important;
+		position: relative;
 	}
 
 	p,
