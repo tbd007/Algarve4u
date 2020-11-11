@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="backend.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -30,18 +30,20 @@
   </head>
 
   <body>
-    <div class="smallheader">
-        <div class=" d-flex-column px-3" id="navbar">
+    <div class="smallheader_back">
+        <div class=" d-flex-column px-3" id="navbar_back">
           <div>
-            <a href="index.html"><img src="logo.png" height="30"  id="logo" alt="logo"/></a>
+            <a href="index.html"><img src="./assets/logo.png" height="30"  id="logo" alt="logo"/></a>
           </div>
   
           <div>
-          <button type="button" class="det_btn">Logout</button>
+          <a href="index.html"><button type="button" class="det_btn">Logout</button></a>
           <a href="#contactform"><button type="button" class="det_btn">Kontakt</button></a>
-          <button id="langbtn">
-            <i class="fas fa-globe"></i><i class="fas fa-chevron-down"></i> 
-          </button>
+          <label for="language"><i class="fas fa-globe"></i></label>
+      <select name="language" id="lang">
+        <option value="DE">DE</option><hr>
+        <option value="EN">EN</option>
+      </select>
           </div>
         </div>
     </div>
@@ -54,7 +56,7 @@
             rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
             ipsum dolor sit amet.</p>
       
-        <ul class="nav nav-tabs mt-5">
+        <ul id="navmenu" class="nav d-flex mx-0 p-0 nav-tabs mt-5">
           <li class="active"><a data-toggle="tab" href="#home">Meine Inserate</a></li>
           <li><a data-toggle="tab" href="#menu1">Nachrichten</a><span class="badge">2</span></li>
           <li><a data-toggle="tab" href="#menu2">Mein Profil</a></li>
@@ -62,15 +64,17 @@
       
         <div class="tab-content">
 <!--TAB 1-->            
-          <div id="home" class="tab-pane  active ">
+          <div id="home" class="tab-pane active ">
             <p>Hier finden Sie eine Übersicht Ihrer Inserate.</p>
             <div class="buchung d-flex justify-content-between align-items-center mb-1">
-                <img class="thumb" src="thr_top_algarve_1920x1000_low.webp" width="90" height="75"/>
+                <img class="thumb" src="./assets/thr_top_algarve_1920x1000_low.webp" width="90" height="75"/>
                 <h5 id="title">Villa Faro ****</h5>
                 <p class="mt-3" id="status">Aktiv</p>
                 <p class="mt-3" id="erstellt">24-10-2020</p>
-                <a href="#popup_inserat"><button class="mainbtn" href="#popup1">Inserat bearbeiten</button></a>
-                <a><i class="far fa-envelope"></i></a>
+                <div>
+                <a href="#popup_inserat"><i class="fas fa-edit"></i></a>
+                <a href="#chat_popup"><i class="far fa-envelope"></i></a>
+              </div>
             </div>
         
 
@@ -112,7 +116,7 @@
                         <h5>Preis/Nacht</h5>
                         <p contenteditable="true">150€</p>
                        
-                        <button class="darkbtn">SPEICHERN</button>    
+                        <button id="save-btn" class="darkbtn">SPEICHERN</button>    
                         </div>
                    </div>
              </div>
@@ -126,7 +130,7 @@
                 <p id="uhrzeit">14:45</p>
                 <p id="datum">24-11-2020</p>
                 <div>
-                <a href="#popup1"><i class="fas fa-comments"></i></a>
+                <a href="#chat_popup"><i class="fas fa-comments"></i></a>
                 <a><i class="far fa-trash-alt"></i></i></a>
                 </div>
                 
@@ -138,7 +142,7 @@
                 <p id="uhrzeit">13:45</p>
                 <p id="datum">24-11-2020</p>
                 <div>
-                <a href="#popup1"><i class="fas fa-comments"></i></a>
+                <a href="#chat_popup"><i class="fas fa-comments"></i></a>
                 <a><i class="far fa-trash-alt"></i></i></a>
                 </div>
             </div>
@@ -149,7 +153,7 @@
                 <p id="uhrzeit">12:45</p>
                 <p id="datum">24-11-2020</p>
                 <div>
-                <a href="#popup1"><i class="fas fa-comments"></i></a>
+                <a href="#chat_popup"><i class="fas fa-comments"></i></a>
                 <a><i class="far fa-trash-alt"></i></i></a>
                 </div>
             </div>
@@ -189,10 +193,104 @@
           <li><a>&copy 2020 Algarve</a></li>
         </div>
         <div class="flex-column">
-            <img src="logo.png" width="150"/>
+            <img src="./assets/logo.png" width="150"/>
           </div> 
        </div>   
    
+
+         <!--Chat-->             
+
+<div class="chat_window" id="chat_popup">
+    
+  <div class="col-md-5 col-md-offset-5">
+      <div class="portlet portlet-default">
+          <div class="portlet-heading">
+              <div class="portlet-title">
+                  <h4 class="text-center"><i class="fa fa-circle text-green"></i> Joao Costa</h4>
+              </div>
+              <div class="portlet-widgets">
+                  
+                  <span class="divider"></span>
+                  <a class="close_chev" href="#"><i class="fa fa-chevron-down"></i></a>
+              </div>
+              <div class="clearfix"></div>
+          </div>
+          <div id="chat">
+              <div>
+              <div class="portlet-body chat-widget" style="overflow-y: auto; width: auto; height: 300px;">
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <p class="text-center text-muted small">Nov 1, 2020 um 12:23</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <div class="media">
+                              <a class="pull-left" href="#">
+                                  <img class="media-object img-circle img-chat rounded mr-1" src="./assets/customer-service.png" alt="">
+                              </a>
+                              <div class="media-body ml-1">
+                                  <h5 class="media-heading">Algarve4u
+                                      <span class="small text-muted pull-right">12:23</span>
+                                  </h5>
+                                  <p>Hi, how can I help you today, dear Joao?</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <div class="media">
+                              <a class="pull-left" href="#">
+                                  <img class="media-object img-circle img-chat" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQCu-iul5LZavpulgJBaBHGjvVslRvDjxBUpA&usqp=CAU" alt="">
+                              </a>
+                              <div class="media-body ml-1">
+                                  <h5 class="media-heading">Joao
+                                      <span class="small text-muted pull-right">12:28</span>
+                                  </h5>
+                                  <p></p>
+                                  <p>Do you have an update on booking #302?</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <div class="media">
+                              <a class="pull-left" href="#">
+                                  <img class="media-object img-circle img-chat mr-2" src="./assets/customer-service.png" alt="">
+                              </a>
+                              <div class="media-body ml-1">
+                                  <h5 class="media-heading">Algarve4u
+                                      <span class="small text-muted pull-right">12:39</span>
+                                  </h5>
+                                  <p>No not yet, the transaction hasn't cleared yet. I will let you know as soon as everything goes through.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <hr>
+              </div>
+              </div>
+              <div class="portlet-footer">
+                  <form role="form">
+                      <div class="form-group">
+                          <textarea class="form-control" placeholder="Nachricht eingeben..."></textarea>
+                      </div>
+                      <div class="form-group">
+                          <button style="width:100%" type="button" class="darkbtn">SENDEN</button>
+                          <div class="clearfix"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- /.col-md-4 -->
+
+</div>   
 
       <!--Contactform-->  
       <div class="container contact" id="contactform">
@@ -202,7 +300,7 @@
           <div class="col-md-4">
             <div class="contact-info">
               <a class="close_form" href="#">X</a>
-              <img src="logo.png" alt="image" width="170"/>
+              <img src="./assets/logo.png" alt="image" width="170"/>
               <h2>KONTAKTIEREN SIE UNS</h2>
               <h4>Sie haben Fragen oder wünschen eine individuelle Beratung - Kontaktieren Sie uns!</h4>
               <div id="phone">
@@ -240,7 +338,7 @@
               </div>
               <div class="form-group">        
                 <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">Senden</button>
+                <button type="submit" class="darkbtn">SENDEN</button>
                 </div>
               </div>
             </div>

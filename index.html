@@ -35,9 +35,9 @@
   <body>
     <div class="contents">
     <div class="smallheader_main">
-      <div class="nav d-flex-column px-3" id="navbar">
+      <div class="navmenu d-flex-column px-3" id="navbar">
         <div>
-          <img id="logo_home" src="logo.png" height="30"  alt="logo"/>
+          <img id="logo_home" src="./assets/logo.png" height="30"  alt="logo"/>
         </div>
 
         <div class="mid_menu">
@@ -50,10 +50,13 @@
           
           <a id="loginbtn" href="#login"><button type="button" class="det_btn">Login</button></a>
           <a id="loginbtnmobile" href="#login"><button type="button" class="det_btn"><i class="fas fa-user-circle"></i></button></a>
-          <a href="#"><button type="button" class="det_btn">Gastgeber werden</button></a>
-          <button id="langbtn">
-            <i class="fas fa-globe"></i><i class="fas fa-chevron-down"></i> 
-          </button>
+          <a href="#contactform"><button type="button" class="det_btn">Gastgeber werden</button></a>
+          <label for="language"><i class="fas fa-globe"></i></label>
+            <select name="language" id="lang">
+              <option value="DE">DE</option><hr>
+              <option value="EN">EN</option>
+            </select>
+         
         </div>
 
       </div>
@@ -94,15 +97,15 @@
   
       <div id="usp" class="d-flex justify-content-center align-items-start col-10 mx-auto my-5 px-1">
         <div class="d-flex flex-column align-items-center mx-5 my-3" style="height:auto;width:230px;">
-          <img src="icon.PNG" width="60" height="auto"/>
+          <img src="./assets/icon.PNG" width="60" height="auto"/>
           <p class="mt-2">Persönlicher Service </p>
         </div>
         <div class="d-flex flex-column align-items-center mx-5 my-3" style="height:auto;width:230px;">
-          <img src="icon.PNG" width="60" height="auto"/>
+          <img src="./assets/icon.PNG" width="60" height="auto"/>
           <p class="mt-2">Einfache & sichere Buchung </p>
         </div>
         <div class="d-flex flex-column align-items-center mx-5 my-3" style="height:auto;width:230px;">
-          <img src="icon.PNG" width="60" height="auto"/>
+          <img src="./assets/icon.PNG" width="60" height="auto"/>
           <p class="mt-2">Hochwertige Ferienhäuser</p>
         </div>
       </div>
@@ -111,7 +114,7 @@
     <div class="bookings">
       <div id="introimage">
         <img
-          src="illustration-character-with-traveling-concept_53876-43719.jpg"
+          src="./assets/illustration-character-with-traveling-concept_53876-43719.jpg"
         />
       </div>
 
@@ -278,7 +281,7 @@
 
     <div class="about">
       
-        <img id="about_img" src="luxury-tropical-resort-hotel-cartoon-vector-with-cocktail-table_33099-1306.jpg" height="400" width="auto"/>
+        <img id="about_img" src="./assets/luxury-tropical-resort-hotel-cartoon-vector-with-cocktail-table_33099-1306.jpg" height="400" width="auto"/>
       
       <div id="about_us">
         
@@ -307,20 +310,18 @@
         <li><a>&copy 2020 Algarve4u</a></li>
       </div>
       <div class="flex-column">
-        <img id="footer_img" src="logo.png" width="150"/>
+        <img id="footer_img" src="./assets/logo.png" width="150"/>
       </div>  
       </div>
 
-
+<!--CONTACT-->
 
       <div class="container contact" id="contactform">
-        
         <div class="row">
-          
           <div class="col-md-4">
             <div class="contact-info">
               <a class="close_form" href="#">X</a>
-              <img src="logo.png" alt="image" width="170"/>
+              <img src="./assets/logo.png" alt="image" width="170"/>
               <h2>KONTAKTIEREN SIE UNS</h2>
               <h4>Sie haben Fragen oder wünschen eine individuelle Beratung - Kontaktieren Sie uns!</h4>
               <div id="phone">
@@ -357,7 +358,7 @@
               </div>
               <div class="form-group">        
                 <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">Senden</button>
+                <button type="submit" class="darkbtn">SENDEN</button>
                 </div>
               </div>
             </div>
@@ -373,7 +374,7 @@
           <a class="close_log" href="#">X</a>
             <div class="panel">
                 
-              <img src="logo.png" width="170">
+              <img src="./assets/logo.png" width="170">
               <p class="mt-2">Bitte geben Sie Email und Passwort ein</p>
               </div>
                 <form id="Login">
@@ -385,8 +386,8 @@
                     </div>
                     <div class="forgot ml-1">
                     <a style="font-size:13px!important; color:rgb(170, 169, 169)" href="">Passwort vergessen?</a>
-        </div>
-                <button type="submit" class="book_btn">Login</button>
+              </div>
+                <button type="submit" class="darkbtn">LOGIN</button>
             </form>
             </div>
         </div></div></div>

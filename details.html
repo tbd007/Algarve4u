@@ -38,20 +38,28 @@
   <body>
     <div class="smallheader d-flex-column align-items-start">
       
-      <div class="nav d-flex justify-content-between px-3" id="navbar">
+      <div class="navmenu d-flex justify-content-between px-3" id="navbar">
         
-        <div>
-          <a href="index.html"><img src="logo.png" height="30"  id="logo" alt="logo"/></a>
-        </div>
+       
+        <a style="margin-top:-7px"  href="index.html"><img src="./assets/logo.png" height="30"  id="logo" alt="logo"/></a>
+      
 
-        <div>
-          <a href="#login"><button type="button" class="det_btn">Login</button></a>
-        <button type="button" class="det_btn">Gastgeber werden</button>
-        <button id="langbtn">
-          <i class="fas fa-globe"></i><i class="fas fa-chevron-down"></i> 
-        </button>
-        </div>
+      <div class="mid_menu_sub ml-3">
+        <a  href="#"><button type="button" class="det_btn">Last-Minute</button></a>
+        <a  href="#"><button type="button" class="det_btn">Überwinterung</button></a>
+        <a  href="#"><button type="button" class="det_btn">Algarve</button></a>
       </div>
+
+      <div>
+      <a href="#login"><button type="button" id="btn_search_log" class="det_btn">Login</button></a>
+      <a href="#contactform"><button type="button" class="det_btn">Gastgeber werden</button></a> 
+      <label for="language"><i class="fas fa-globe"></i></label>
+      <select name="language" id="lang">
+        <option value="DE">DE</option><hr>
+        <option value="EN">EN</option>
+      </select>
+      </div>
+    </div>
 
       <div class="searchbar_search my-1 mx-2">
         <input
@@ -112,17 +120,17 @@
     <div class="det_wrap mb-5">
       <div class="det_list ">
           <div class="d-flex align-items-center">
-          <img width="35" src="icon.PNG"/><p><b>Erweiterte Reinigung</b>
+          <img width="35" src="./assets/icon.PNG"/><p><b>Erweiterte Reinigung</b>
           Dieser Gastgeber hat sich zur erweiterten Reinigung in 5 Schritten verpflichtet.</p> <br>
           </div>
 
           <div class="d-flex align-items-center">
-          <img width="35" src="icon.PNG"/><p><b>Eigenständiger Check-in</b>
+          <img width="35" src="./assets/icon.PNG"/><p><b>Eigenständiger Check-in</b>
           Checke per Schlüsselbox selbst ein.</p><br>
           </div>
 
           <div class="d-flex align-items-center">
-          <img width="35" src="icon.PNG"/><p><b>Stornierungsbedingungen</b>
+          <img width="35" src="./assets/icon.PNG"/><p><b>Stornierungsbedingungen</b>
           Storniere vor 3:00 PM am 5. Nov. und erhalte 50% % Rückerstattung, abzüglich der Service-Gebühr.</p><br>
           </div>
         
@@ -296,7 +304,7 @@
               <h5>150€</h5>
               </div>
               
-              <a class="btn_a" href="#popup1"><button class="book_btn mx-3" >UNTERKUNFT BUCHEN</button></a>
+              <a class="btn_a" href="#popup1"><button class="darkbtn mx-3" >UNTERKUNFT BUCHEN</button></a>
              
               </div>
             </div>      
@@ -454,9 +462,9 @@
 
      
     <div class="about">
-      <img id="about_img" src="sea-2710932_960_720.jpg" height="380" width="45%" class=" mr-0" />
+      <img id="about_img" src="./assets/sea-2710932_960_720.jpg" height="380" width="45%" class=" mr-0" />
       <div id="about_us">
-        <img src="logo.png" width="220" class="mb-3 "/>
+        <img src="./assets/logo.png" width="220" class="mb-3 "/>
         <h3>Wir finden das ideale Ferienhaus für Sie!</h3>
         <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -484,7 +492,7 @@
         <li><a>&copy 2020 Algarve</a></li>
       </div>
       <div class="flex-column">
-        <img id="footer_img" src="logo.png" width="150"/>
+        <img id="footer_img" src="./assets/logo.png" width="150"/>
       </div> 
     </div>
 
@@ -590,7 +598,7 @@
                 </div>
                 </form>
               </div>  
-              <a class="btn_a" href="payment.html"><button class="book_btn_pop mx-3">JETZT BUCHEN</button></a>
+              <a class="btn_a" href="payment.html"><button class="darkbtn mx-5">JETZT BUCHEN</button></a>
             </form>
           </div>
         </div>
@@ -605,7 +613,7 @@
           <div class="col-md-4">
             <div class="contact-info">
               <a class="close_form" href="#">X</a>
-              <img src="logo.png" alt="image" width="170"/>
+              <img src="./assets/logo.png" alt="image" width="170"/>
               <h2>KONTAKTIEREN SIE UNS</h2>
               <h4>Sie haben Fragen oder wünschen eine individuelle Beratung - Kontaktieren Sie uns!</h4>
               <div id="phone">
@@ -643,7 +651,7 @@
               </div>
               <div class="form-group">        
                 <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">Senden</button>
+                <button type="submit" class="darkbtn">SENDEN</button>
                 </div>
               </div>
             </div>
@@ -653,13 +661,13 @@
 
 
 
-      <div class="container" id="login">
+      <div class="loginwrap" id="login">
         <div class="login-form">
         <div class="main-div">
           <a class="close_log" href="#">X</a>  
             <div class="panel">
                
-              <img src="logo.png" width="170">
+              <img src="./assets/logo.png" width="170">
               <p class="mt-2">Bitte geben Sie Email und Passwort ein</p>
               </div>
                 <form id="Login">
@@ -672,7 +680,7 @@
                     <div class="forgot ml-1">
                     <a style="font-size:13px!important; color:rgb(170, 169, 169)" href="">Passwort vergessen?</a>
             </div>
-                    <button type="submit" class="book_btn">Login</button>
+                    <button type="submit" class="darkbtn">Login</button>
                 </form>
             </div>
         </div></div></div>

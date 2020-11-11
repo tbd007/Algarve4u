@@ -33,18 +33,26 @@
 
     <div class="smallheader d-flex-column align-items-start">
       
-      <div class="nav d-flex justify-content-between px-3" id="navbar">
+      <div class="navmenu d-flex justify-content-between px-3" id="navbar">
         
-        <div>
-          <a href="index.html"><img src="logo.png" height="30"  id="logo" alt="logo"/></a>
+       
+          <a style="margin-top:-7px"  href="index.html"><img src="./assets/logo.png" height="30"  id="logo" alt="logo"/></a>
+        
+
+        <div class="mid_menu_sub ml-3">
+          <a  href="#"><button type="button" class="det_btn">Last-Minute</button></a>
+          <a  href="#"><button type="button" class="det_btn">Überwinterung</button></a>
+          <a  href="#"><button type="button" class="det_btn">Algarve</button></a>
         </div>
 
         <div>
         <a href="#login"><button type="button" id="btn_search_log" class="det_btn">Login</button></a>
-        <button type="button" id="btn_search_host" class="det_btn">Gastgeber werden</button>
-        <button id="langbtn">
-          <i class="fas fa-globe"></i><i class="fas fa-chevron-down"></i> 
-        </button>
+        <a href="#contact_form"><button type="button" class="det_btn">Gastgeber werden</button></a> 
+        <label for="language"><i class="fas fa-globe"></i></label>
+        <select name="language" id="lang">
+          <option value="DE">DE</option><hr>
+          <option value="EN">EN</option>
+        </select>
         </div>
       </div>
 
@@ -63,14 +71,208 @@
         />
         <button id="det_search_btn" type="submit"><i class="fas fa-1x fa-search"></i></button>
         </div>
+        
+      </div>
+     
+  
+    
+  
+        <a style="z-index:1" href="#id" onclick="toggle_visibility('searchcontainer','maincontainer')" id="mapbtn">Karte an/aus</a>
+    
+<!--SEARCHCONTAINER-->
 
+<div class="searchcontainer" id="searchcontainer" style="display:none">
+
+  <div id="searchresults">
+  
+    <div
+      id="buttons"
+      class="col-12 mx-auto d-flex justify-content-center align-items-center"
+    >
+      <p class="text-white mt-3 mr-3" id="sort">Sortieren nach</p>
+      <button class="mainbuttondark">Beliebtheit</button>
+      <button class="mainbuttondark">Preis aufsteigend</button>
+      <button class="mainbuttondark">Preis absteigend</button>
+      <button class="mainbuttondark"><i class="fas fa-sliders-h"></i></button>
+      
+    </div>
+
+<div  id="hl_wide">
+
+  <div class="card">
+    <img
+      src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p id="Rating">4.5</p>
+      <div class="ausstattung">
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-swimming-pool"></i>
+        <i class="fas fa-umbrella-beach"></i>
+        <i class="fas fa-parking"></i>
+      </div>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+
+      <div class="bottom">
+        <a href="#" class="mainbuttondark">Details</a>
+        <p id="Price">130€/N</p>
       </div>
     </div>
-  
+  </div>
+
+  <div class="card">
+    <img
+      src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p id="Rating">4.5</p>
+      <div class="ausstattung">
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-swimming-pool"></i>
+        <i class="fas fa-umbrella-beach"></i>
+        <i class="fas fa-parking"></i>
+      </div>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+
+      <div class="bottom">
+        <a href="#" class="mainbuttondark">Details</a>
+        <p id="Price">130€/N</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img
+      src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p id="Rating">4.5</p>
+      <div class="ausstattung">
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-swimming-pool"></i>
+        <i class="fas fa-umbrella-beach"></i>
+        <i class="fas fa-parking"></i>
+      </div>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+
+      <div class="bottom">
+        <a href="#" class="mainbuttondark">Details</a>
+        <p id="Price">130€/N</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img
+      src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p id="Rating">4.5</p>
+      <div class="ausstattung">
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-swimming-pool"></i>
+        <i class="fas fa-umbrella-beach"></i>
+        <i class="fas fa-parking"></i>
+      </div>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+
+      <div class="bottom">
+        <a href="#" class="mainbuttondark">Details</a>
+        <p id="Price">130€/N</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img
+      src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p id="Rating">4.5</p>
+      <div class="ausstattung">
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-swimming-pool"></i>
+        <i class="fas fa-umbrella-beach"></i>
+        <i class="fas fa-parking"></i>
+      </div>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+
+      <div class="bottom">
+        <a href="#" class="mainbuttondark">Details</a>
+        <p id="Price">130€/N</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img
+      src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p id="Rating">4.5</p>
+      <div class="ausstattung">
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-swimming-pool"></i>
+        <i class="fas fa-umbrella-beach"></i>
+        <i class="fas fa-parking"></i>
+      </div>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+
+      <div class="bottom">
+        <a href="#" class="mainbuttondark">Details</a>
+        <p id="Price">130€/N</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+<!--SEARCHCONTAINER ENDE-->
+
+
+<!--MAINCONTAINER-->
     <div class="maincontainer" id="maincontainer">
+      
       <!--SUCHERGEBNISSE-->
       <div id="searchresults">
-        <a href="#" onclick="toggle_visibility()" id="mapbtn">Karte ein/aus</a>
+       
         <div
           id="buttons"
           class="col-12 mx-auto d-flex justify-content-center align-items-center"
@@ -82,6 +284,8 @@
           <button class="mainbuttondark"><i class="fas fa-sliders-h"></i></button>
           
         </div>
+
+      
        
         <div class="container-fluid flex-column align-items-center" id="houselist">
           
@@ -109,7 +313,7 @@
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
               </div>
-              <a href="#" class="mainbuttondark">DETAILS</a>
+              <a href="#"><button class="mainbuttondark">DETAILS</button></a>
             </div>
           </div>
 
@@ -135,11 +339,11 @@
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
               </div>
-              <a href="#" class="mainbuttondark">DETAILS</a>
+              <a href="#"><button class="mainbuttondark">DETAILS</button></a>
             </div>
           </div>
 
-          <div class="card-result ">
+          <div class="card-result">
             <img
               src="https://www.boutique-homes.com/wp-content/uploads/2017/01/luxury_villa_portugal_24_new.jpg"
               class="card-img-top"
@@ -161,7 +365,7 @@
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
               </div>
-              <a href="#" class="mainbuttondark">DETAILS</a>
+              <a href="#"><button class="mainbuttondark">DETAILS</button></a>
             </div>
           </div>
 
@@ -187,7 +391,7 @@
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
               </div>
-              <a href="#" class="mainbuttondark">DETAILS</a>
+              <a href="#"><button class="mainbuttondark">DETAILS</button></a>
             </div>
           </div>
 
@@ -213,7 +417,7 @@
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
               </div>
-              <a href="#" class="mainbuttondark">DETAILS</a>
+              <a href="#"><button class="mainbuttondark">DETAILS</button></a>
             </div>
           </div>
 
@@ -239,7 +443,7 @@
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
               </div>
-              <a href="#" class="mainbuttondark">DETAILS</a>
+              <a href="#"><button class="mainbuttondark">DETAILS</button></a>
             </div>
           </div>
 
@@ -265,7 +469,7 @@
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
               </div>
-              <a href="#" class="mainbuttondark">DETAILS</a>
+              <a href="#"><button class="mainbuttondark">DETAILS</button></a> 
             </div>
           </div>
 
@@ -291,7 +495,7 @@
                 <p id="Price">130€/N</p>
                 <p id="Rating">4.5</p>
               </div>
-              <a href="#" class="mainbuttondark">DETAILS</a>
+              <a href="#"><button class="mainbuttondark">DETAILS</button></a>
             </div>
           </div>
 
@@ -299,37 +503,34 @@
 
         </div>
       </div>
+
+      
       
         <div class="resultmap" id="resultmap">
-          
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1626275.3903093827!2d-9.316370650597877!3d37.2401353089236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0554ee55d1cfef%3A0x80e2652e12910e45!2sDistrikt%20Faro%2C%20Portugal!5e0!3m2!1sde!2sat!4v1603878414107!5m2!1sde!2sat" width="600" height="150%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
-        <script>
+     
+      </div>
+<!--MAINCONTAINER ENDE-->
+ 
 
-          function toggle_visibility(id) {
-            
-          const e = document.getElementById("resultmap");
-          const mc = document.getElementById("maincontainer");
-          const hl = document.getElementById("maincontainer");
-          const sr = document.getElementById("searchresults");
+<script>
+         
+  function toggle_visibility(id1, id2) {  
+   var e = document.getElementById(id1);
+   var e2 = document.getElementById(id2);
+   if(e.style.display == 'none') {                
+      e.style.display = 'block';           
+      e2.style.display = 'none';
+   }
+   else {
+      e.style.display = 'none';            
+      e2.style.display = 'flex';
+   }              
+}
 
-          if (e.style.display == "block"){
-              e.style.display = "none";
-              mc.style.display="flex";
-              mc.style.width="100vw";
-              mc.style.justifyContent="center";
-              hl.style.flexDirection="row";
-              hl.style.width="100vw!important";
-              hl.style.height="auto";
-              sr.style.width="99vw";
-          }else{
-              e.style.display = "block";
-          }
-          }
-        </script>
-
-</div>
-    </div>
+ 
+</script>
 
     <div class="about" id="about_search">
       
@@ -361,7 +562,7 @@
         <li><a>&copy 2020 Algarve</a></li>
       </div>
       <div class="flex-column">
-        <img id="footer_img" src="logo.png" width="150"/>
+        <img id="footer_img" src="./assets/logo.png" width="150"/>
       </div> 
       </div>
 
@@ -374,7 +575,7 @@
           <div class="col-md-4">
             <div class="contact-info">
               <a class="close_form" href="#">X</a>
-              <img src="logo.png" alt="image" width="170"/>
+              <img src="./assets/logo.png" alt="image" width="170"/>
               <h2>KONTAKTIEREN SIE UNS</h2>
               <h4>Sie haben Fragen oder wünschen eine individuelle Beratung - Kontaktieren Sie uns!</h4>
               <div id="phone">
@@ -421,7 +622,7 @@
       </div>
 
 
-      <div class="container" id="login">
+      <div class="loginwrap" id="login">
         <div class="login-form">
           
         <div class="main-div">
@@ -429,7 +630,7 @@
           <a class="close_log" href="#">X</a> 
             <div class="panel">
              
-           <img src="logo.png" width="170">
+           <img src="./assets/logo.png" width="170">
            <p class="mt-2">Bitte geben Sie Email und Passwort ein</p>
            </div>
             <form id="Login">
@@ -442,7 +643,7 @@
                 <div class="forgot ml-1">
                 <a style="font-size:13px!important; color:rgb(170, 169, 169)" href="">Passwort vergessen?</a>
         </div>
-                <button type="submit" class="book_btn">Login</button>
+                <button type="submit" class="darkbtn">Login</button>
             </form>
             </div>
         </div></div></div>  

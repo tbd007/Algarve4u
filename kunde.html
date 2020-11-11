@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="backend.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -35,18 +35,20 @@
 
   <body>
     <div class="mainwrap">
-    <div class="smallheader">
-        <div class=" d-flex-column px-3" id="navbar">
+      <div class="smallheader_back">
+        <div class=" d-flex-column px-3" id="navbar_back">
           <div>
-          <a href="index.html"><img src="logo.png" height="30"  id="logo" alt="logo"/></a>
+            <a href="index.html"><img src="./assets/logo.png" height="30"  id="logo" alt="logo"/></a>
           </div>
   
           <div>
-          <button type="button" class="det_btn">Logout</button>
+          <a href="index.html"><button type="button" class="det_btn">Logout</button></a>
           <a href="#contactform"><button type="button" class="det_btn">Kontakt</button></a>
-          <button id="langbtn">
-            <i class="fas fa-globe"></i><i class="fas fa-chevron-down"></i> 
-          </button>
+          <label for="language"><i class="fas fa-globe"></i></label>
+      <select name="language" id="lang">
+        <option value="DE">DE</option><hr>
+        <option value="EN">EN</option>
+      </select>
           </div>
         </div>
     </div>
@@ -59,7 +61,7 @@
             rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
             ipsum dolor sit amet.</p>
       
-        <ul class="nav nav-tabs mt-5">
+        <ul id="navmenu" class="nav d-flex mx-0 p-0 nav-tabs mt-5">
           <li class="active"><a data-toggle="tab" href="#home">Meine Buchungen</a></li>
           <li><a data-toggle="tab" href="#menu1">Nachrichten</a><span class="badge">2</span></li>
           <li><a data-toggle="tab" href="#menu2">Mein Profil</a></li>
@@ -67,24 +69,28 @@
       
         <div class="tab-content">
 <!--TAB 1-->            
-          <div id="home" class="tab-pane  active ">
+          <div id="home" class="tab-pane active ">
             <p>Hier finden Sie eine Übersicht Ihrer Buchungen.</p>
             <div class="buchung d-flex justify-content-between align-items-center mb-1">
-                <img class="thumb" src="thr_top_algarve_1920x1000_low.webp" width="90" height="75"/>
+                <img class="thumb" src="./assets/thr_top_algarve_1920x1000_low.webp" width="90" height="75"/>
                 <h5 id="title">Villa Faro ****</h5>
                 <p class="mt-3" id="anreise">23-11-2020</p>
                 <p  class="mt-3" id="abreise">24-11-2020</p>
-                <a href="#popup1"><button class="mainbtn" href="#popup1">Details</button></a>
-                <a><i class="far fa-envelope"></i></a>
+                <div>
+                <a href="#popup1"><i class="far fa-list-alt"></i></a>
+                <a href="#chat_popup"><i class="far fa-envelope mt-1"></i></a>
+                </div>
             </div>
 
             <div class="buchung d-flex justify-content-between align-items-center">
-                <img class="thumb" src="luxury-tropical-resort-hotel-cartoon-vector-with-cocktail-table_33099-1306.jpg" width="90" height="75"/>
+                <img class="thumb" src="./assets/luxury-tropical-resort-hotel-cartoon-vector-with-cocktail-table_33099-1306.jpg" width="90" height="75"/>
                 <h5 id="title">Villa Mareike ***</h5>
                 <p id="anreise">23-11-2020</p>
                 <p id="abreise">24-11-2020</p>
-                <a href="#popup1"><button class="mainbtn" href="#popup1">Details</button></a>
-                <a><i class="far fa-envelope"></i></a>
+                <div>
+                  <a href="#popup1"><i class="far fa-list-alt"></i></a>
+                  <a href="#chat_popup"><i class="far fa-envelope mt-1"></i></a>
+                  </div>
             </div>
             <div id="popup1" class="pop_overlay">
                 <div class="popup">
@@ -129,7 +135,7 @@
 
                         <hr>
                         <div class="d-flex justify-content-center">
-                        <button class="mainbtn mr-3">Gastgeber kontaktieren</button>
+                        <a href="#chat_popup"><button class="mainbtn mr-3">Gastgeber kontaktieren</button></a>
                         <button class="mainbtn">Buchung stornieren</button>
                         </div> 
 
@@ -160,7 +166,7 @@
                 <p id="uhrzeit">13:45</p>
                 <p id="datum">24-11</p>
                 <div>
-                <a href="#popup1"><i class="fas fa-comments"></i></a>
+                <a href="#chat_popup"><i class="fas fa-comments"></i></a>
                 <a><i class="far fa-trash-alt"></i></i></a>
                 </div>
                 
@@ -173,7 +179,7 @@
                 <p id="uhrzeit">12:45</p>
                 <p id="datum">24-11</p>
                 <div>
-                <a href="#popup1"><i class="fas fa-comments"></i></a>
+                <a href="#chat_popup" style="z-index:2"><i class="fas fa-comments"></i></a>
                 <a><i class="far fa-trash-alt"></i></i></a>
                 </div>
                 
@@ -208,7 +214,7 @@
           <div class="col-md-4">
             <div class="contact-info">
               <a class="close_form" href="#">X</a>
-              <img src="logo.png" alt="image" width="170"/>
+              <img src="./assets/logo.png" alt="image" width="170"/>
               <h2>KONTAKTIEREN SIE UNS</h2>
               <h4>Sie haben Fragen oder wünschen eine individuelle Beratung - Kontaktieren Sie uns!</h4>
               <div id="phone">
@@ -246,7 +252,7 @@
               </div>
               <div class="form-group">        
                 <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="book_btn">Senden</button>
+                <button type="submit" class="darkbtn">SENDEN</button>
                 </div>
               </div>
             </div>
@@ -255,203 +261,20 @@
       </div>
 
 
-      <!--Chat-->
+      <!--Chat-->             
 
-<style>
-.chat_window{
-    position: absolute;
-    top:0;
-	bottom: 0 !important;
-	left: 35%;
-    right: 0;
-    visibility:hidden;
-}
-
-.chat_window p {
-    font-size:13px !important;
-}
-
-.chat_window:target {
-	visibility: visible;
-	opacity: 1;
-}
-
-.portlet {
-	margin-bottom: 15px;
-}
-
-.btn-white {
-	border-color: #cccccc;
-	color: #333333;
-	background-color: #ffffff;
-}
-
-.portlet {
-	border: 1px solid;
-}
-
-.portlet .portlet-heading {
-	padding: 0 15px;
-}
-
-.portlet .portlet-heading h4 {
-	padding: 1px 0;
-	font-size: 16px;
-}
-
-.portlet .portlet-heading a {
-	color: #fff;
-}
-
-.portlet .portlet-heading a:hover,
-.portlet .portlet-heading a:active,
-.portlet .portlet-heading a:focus {
-	outline: none;
-}
-
-.portlet .portlet-widgets .dropdown-menu a {
-	color: #333;
-}
-
-.portlet .portlet-widgets ul.dropdown-menu {
-	min-width: 0;
-}
-
-.portlet .portlet-heading .portlet-title {
-	float: left;
-}
-
-.portlet .portlet-heading .portlet-title h4 {
-	margin: 10px 0;
-}
-
-.portlet .portlet-heading .portlet-widgets {
-	float: right;
-	margin: 8px 0;
-}
-
-.portlet .portlet-heading .portlet-widgets .tabbed-portlets {
-	display: inline;
-}
-
-.portlet .portlet-heading .portlet-widgets .divider {
-	margin: 0 5px;
-}
-
-.portlet .portlet-body {
-	padding: 15px;
-	background: #fff;
-}
-
-.portlet .portlet-footer {
-	padding: 10px 15px;
-	background: #e0e7e8;
-}
-
-.portlet .portlet-footer ul {
-	margin: 0;
-}
-
-
-
-.portlet-green > .portlet-heading {
-	color: #fff;
-	background-color: #16a085;
-}
-
-.portlet-orange,
-.portlet-orange > .portlet-heading {
-	border-color: #f39c12;
-}
-
-.portlet-orange > .portlet-heading {
-	color: #fff;
-	background-color: #f39c12;
-}
-
-.portlet-blue,
-.portlet-blue > .portlet-heading {
-	border-color: #2980b9;
-}
-
-.portlet-blue > .portlet-heading {
-	color: #fff;
-	background-color: #2980b9;
-}
-
-.portlet-red,
-.portlet-red > .portlet-heading {
-	border-color: #e74c3c;
-}
-
-.portlet-red > .portlet-heading {
-	color: #fff;
-	background-color: #e74c3c;
-}
-
-.portlet-purple,
-.portlet-purple > .portlet-heading {
-	border-color: #8e44ad;
-}
-
-.portlet-purple > .portlet-heading {
-	color: #fff;
-	background-color: #8e44ad;
-}
-
-.portlet-default,
-.portlet-dark-blue,
-.portlet-default > .portlet-heading,
-.portlet-dark-blue > .portlet-heading {
-	border-color: #34495e;
-}
-
-.portlet-default > .portlet-heading,
-.portlet-dark-blue > .portlet-heading {
-	color: #fff;
-	background-color: rgb(43, 43, 63);
-}
-
-.portlet-basic,
-.portlet-basic > .portlet-heading {
-	border-color: #333;
-}
-
-.portlet-basic > .portlet-heading {
-	border-bottom: 1px solid #333;
-	color: #333;
-	background-color: #fff;
-}
-
-@media (min-width: 768px) {
-	.portlet {
-		margin-bottom: 30px;
-	}
-}
-
-.img-chat {
-	width: 35px;
-	height: 35px;
-}
-
-.text-green {
-	color: rgb(250, 208, 72);
-}
-
-</style>                          
-
-<div class="my-5 bootstrap chat_window" id="chat_popup">
-    <div class="row">
+<div class="chat_window" id="chat_popup">
+    
         <div class="col-md-5 col-md-offset-5">
             <div class="portlet portlet-default">
                 <div class="portlet-heading">
                     <div class="portlet-title">
-                        <h4><i class="fa fa-circle text-green"></i> Joao Costa</h4>
+                        <h4 class="text-center"><i class="fa fa-circle text-green"></i> Joao Costa</h4>
                     </div>
                     <div class="portlet-widgets">
                         
                         <span class="divider"></span>
-                        <a class="close" href="#"><i class="fa fa-chevron-down"></i></a>
+                        <a class="close_chev" href="#"><i class="fa fa-chevron-down"></i></a>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -467,7 +290,7 @@
                             <div class="col-lg-12">
                                 <div class="media">
                                     <a class="pull-left" href="#">
-                                        <img class="media-object img-circle img-chat rounded mr-1" src="customer-service.png" alt="">
+                                        <img class="media-object img-circle img-chat rounded mr-1" src="./assets/customer-service.png" alt="">
                                     </a>
                                     <div class="media-body ml-1">
                                         <h5 class="media-heading">Algarve4u
@@ -500,7 +323,7 @@
                             <div class="col-lg-12">
                                 <div class="media">
                                     <a class="pull-left" href="#">
-                                        <img class="media-object img-circle img-chat mr-2" src="customer-service.png" alt="">
+                                        <img class="media-object img-circle img-chat mr-2" src="./assets/customer-service.png" alt="">
                                     </a>
                                     <div class="media-body ml-1">
                                         <h5 class="media-heading">Algarve4u
@@ -520,7 +343,7 @@
                                 <textarea class="form-control" placeholder="Nachricht eingeben..."></textarea>
                             </div>
                             <div class="form-group">
-                                <button type="button" class="darkbtn pull-right">Senden</button>
+                                <button style="width:100%" type="button" class="darkbtn">SENDEN</button>
                                 <div class="clearfix"></div>
                             </div>
                         </form>
@@ -529,7 +352,7 @@
             </div>
         </div>
         <!-- /.col-md-4 -->
-    </div>
+    
 </div>  
 <div class="push"></div>              
 </div>
@@ -543,7 +366,7 @@
 
         <div class="flex-column">
           <li><a>Buchungen verwalten</a></li>
-          <li><a>Gastgeber werden</a></li>
+          <li><a href="#contactform">Gastgeber werden</a></li>
         </div>
 
         <div class="flex-column">
@@ -552,7 +375,7 @@
         </div>
 
         <div class="flex-column">
-            <img id="footer_logo" src="logo.png" width="150"/>
+            <img id="footer_logo" src="./assets/logo.png" width="150"/>
         </div> 
 
        </div>   
