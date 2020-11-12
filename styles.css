@@ -827,7 +827,7 @@ label {
 
 #cpop {
 	background: rgb(43, 43, 63) !important;
-	height: 75vh !important;
+	height: auto !important;
 	padding-top: 20px !important;
 }
 
@@ -2170,7 +2170,7 @@ a:focus {
 
 	.contact-form {
 		margin-top: 15px;
-		height: 70vh;
+		height: auto !important;
 	}
 
 	.nav-tabs > li > a {
