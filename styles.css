@@ -172,10 +172,6 @@ h4 {
 	position: absolute;
 	top: 15%;
 	left: 18%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
 	background: rgba(242, 242, 242, 0.388);
 	padding: 45px 25px 25px 25px;
 	border-radius: 75px;
@@ -265,22 +261,6 @@ h4 {
 
 #introimage > img:hover {
 	transform: scale(1.2);
-}
-
-.bookings_search {
-	background: #24663f;
-	color: rgba(255, 255, 255, 0.849);
-	text-align: justify;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 25px;
-}
-
-.bookings_search > h6 {
-	font-weight: 500;
-	margin-bottom: 15px;
-	font-size: 20px;
 }
 
 .houses {
@@ -557,6 +537,14 @@ h3 {
 	background: none;
 }
 
+#det_search_btn_mini,
+#det_search_btn_mini > i {
+	margin-top: -2px !important;
+	font-size: 18px !important;
+	border: none;
+	background: transparent;
+}
+
 #det_search_btn > i,
 #langbtn > i {
 	color: rgb(66, 61, 99);
@@ -817,22 +805,25 @@ label {
 }
 
 .popup {
-	margin: 50px auto;
+	margin: 20px auto;
 	padding: 20px;
 	background: white;
 	border-radius: 7px;
 	width: 60%;
-	height: 90vh;
+	height: 80vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	position: relative;
 	transition: all 2s ease-in-out;
+	z-index: 5;
+	border: 1px solid rgba(182, 182, 182, 0.767);
 }
 
 #cpop {
 	background: rgb(43, 43, 63) !important;
 	height: auto !important;
 	padding-top: 20px !important;
+	overflow-y: hidden;
 }
 
 .popup h2 {
@@ -1114,10 +1105,11 @@ a:focus {
 
 #mapbtn {
 	position: absolute;
-	right: 0;
-	top: 15.5%;
-	margin: 5px;
-	background: rgba(255, 255, 255, 0.774);
+	right: 0%;
+	top: 21.2%;
+	border-radius: 3px;
+	margin: 0px;
+	background: rgba(255, 255, 255, 0.974);
 	padding: 5px 10px;
 }
 
