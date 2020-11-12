@@ -1466,6 +1466,10 @@ a:focus {
 		height: auto;
 	}
 
+	.smallheader .fa-bars {
+		color: rgb(59, 59, 59) !important;
+	}
+
 	#det_search_btn {
 		margin-top: 5px !important;
 		font-size: 16px;
@@ -1494,7 +1498,7 @@ a:focus {
 		color: rgb(250, 208, 72);
 		margin-right: 7px;
 		margin-top: 3px;
-		font-size: 19px;
+		font-size: 18px;
 	}
 
 	.mid_menu,
