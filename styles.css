@@ -95,7 +95,7 @@ h4 {
 .mid_menu {
 	position: absolute;
 	top: 50% !important;
-	left: 36%;
+	left: 40% !important;
 }
 
 .mid_menu a button {
@@ -151,6 +151,7 @@ h4 {
 .darkbtn {
 	padding: 10px 15px;
 	width: auto !important;
+	min-width: 70px !important;
 	border-radius: 7px;
 	color: white;
 	text-shadow: 2px 1px 10px rgb(67, 67, 73);
@@ -809,7 +810,7 @@ label {
 	padding: 20px;
 	background: white;
 	border-radius: 7px;
-	width: 60%;
+	width: 50%;
 	height: 80vh;
 	overflow-y: scroll;
 	overflow-x: hidden;

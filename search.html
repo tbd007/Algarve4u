@@ -47,7 +47,7 @@
 
         <div>
         <i class="fas fa-bars d-none"></i>  
-        <a href="#login"><button type="button" id="btn_search_log" class="det_btn">Login</button></a>
+        <button type="button" id="btn_search_log" class="det_btn"><a href="#login">Login</a></button>
         <a href="#popup_contact"><button type="button" class="det_btn">Gastgeber werden</button></a> 
         <a href="#lang_pop"><label for="language"><i class="fas fa-globe"></i></label>
         <select name="language" id="lang">
@@ -514,23 +514,7 @@
 <!--MAINCONTAINER ENDE-->
  
 
-<script>
-         
-  function toggle_visibility(id1, id2) {  
-   var e = document.getElementById(id1);
-   var e2 = document.getElementById(id2);
-   if(e.style.display == 'none') {                
-      e.style.display = 'block';           
-      e2.style.display = 'none';
-   }
-   else {
-      e.style.display = 'none';            
-      e2.style.display = 'flex';
-   }              
-}
 
- 
-</script>
 
     <div class="about" id="about_search">
       
@@ -738,6 +722,22 @@
             </ul>  
             
           </div></div>  
+
+          <script>
+            function toggle_visibility(id1, id2) {  
+            
+             var e = document.getElementById(id1);
+             var e2 = document.getElementById(id2);
+             if(e.style.display == 'none') {                
+                e.style.display = 'block';           
+                e2.style.display = 'none';
+             }
+             else {
+                e.style.display = 'none';            
+                e2.style.display = 'flex';
+             }              
+          }
+          </script>      
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
