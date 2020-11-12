@@ -1497,7 +1497,7 @@ a:focus {
 		display: block;
 		color: rgb(250, 208, 72);
 		margin-right: 7px;
-		margin-top: 3px;
+		margin-top: 0px;
 		font-size: 18px;
 	}
 
