@@ -1467,7 +1467,7 @@ a:focus {
 	}
 
 	.smallheader .fa-bars {
-		color: rgb(59, 59, 59) !important;
+		color: rgb(122, 122, 122) !important;
 	}
 
 	#det_search_btn {
@@ -1478,7 +1478,7 @@ a:focus {
 	#det_search_btn_mini,
 	#det_search_btn_mini > i {
 		margin-top: -2px !important;
-		font-size: 14px !important;
+		font-size: 15px !important;
 		border: none;
 		background: transparent;
 	}
@@ -1743,7 +1743,7 @@ a:focus {
 	}
 
 	#logo {
-		width: 80px;
+		width: 90px !important;
 		height: auto;
 	}
 
