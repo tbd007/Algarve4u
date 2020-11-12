@@ -177,20 +177,24 @@ h4 {
 	align-items: center;
 	justify-content: center;
 	background: rgba(242, 242, 242, 0.388);
-	padding: 25px;
+	padding: 45px 25px 25px 25px;
 	border-radius: 75px;
 	box-shadow: inset 3px 3px 10px rgba(255, 255, 255, 0.26);
+	height: 70px;
 }
 
-.searchbar > input {
+.searchbar input {
 	margin: 0px;
 	height: 37px;
 	background: rgb(255, 255, 255);
 	border-radius: 0px;
-	border: none;
+	border: none !important;
 	text-align: center;
 	width: 190px;
+	border: none !important;
+	outline: none;
 	border-right: 0.5px solid rgb(182, 181, 181);
+	box-shadow: none;
 	cursor: pointer;
 	font-size: 15px !important;
 }
@@ -1536,23 +1540,34 @@ a:focus {
 	.searchbar {
 		display: flex;
 		flex-direction: column !important;
-		justify-content: space-between !important;
+		align-items: center !important;
 		height: auto !important;
-		padding: 25px 15px 15px 10px !important;
+		padding: 20px 10px 20px 10px !important;
 		margin: 10px auto;
-		margin-left: -30px;
+		margin-left: 0px;
 		margin-bottom: 20px !important;
-		width: 80% !important;
-		box-shadow: inset 3px 3px 10px rgba(255, 255, 255, 0.46);
+		width: 66% !important;
+		box-shadow: inset 3px 3px 10px rgba(255, 255, 255, 0.46) !important;
 		border-radius: 45px;
 	}
 
-	input,
+	.searchbar input,
 	.form-control-sm {
 		margin-bottom: 5px !important;
-		width: 80% !important;
+		border: none !important;
+		width: 100% !important;
 		border-radius: 7px !important;
 		background-color: rgba(255, 255, 255, 0.992) !important;
+		height: 30px !important;
+		text-align: center;
+	}
+
+	.searchbar > form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		margin: 10px auto;
 	}
 
 	header {
@@ -2161,7 +2176,7 @@ a:focus {
 
 	.phone,
 	.fa-phone {
-		font-size: 18px;
+		font-size: 20px !important;
 	}
 
 	#footer_logo {

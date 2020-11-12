@@ -52,9 +52,8 @@
           <a href="#popup_contact"><button type="button" class="det_btn">Gastgeber werden</button></a> 
           <a href="#lang_pop"><label for="language"><i class="fas fa-globe"></i></label>
             <select name="language" id="lang">
-             
             </select>
-         
+          </a>
         </div>
 
       </div>
@@ -63,20 +62,22 @@
 
     <header class="container-fluid mt-0 mx-auto">
 
-      <div class="searchbar mt-3">
+      <div class="searchbar mt-3 py-1">
+        <form>
         <input
           type="text"
           class="form-control-sm"
           placeholder="Wo soll es hingehen?"
         />
         <input placeholder="Check-in"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" />
-        <input placeholder="Check-out"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" " />
+        <input placeholder="Check-out"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
         <input
           type="text"
           class="form-control-sm"
           placeholder="Anzahl der Gäste"
         />
         <a href="search.html"><button id="det_search_btn" type="submit"><i class="fas fa-1x fa-search"></i></button></a>
+      </form>
       </div>
 
       <div class="overlay">
