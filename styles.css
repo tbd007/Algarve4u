@@ -162,6 +162,10 @@ h4 {
 	background: rgb(43, 43, 63) !important;
 }
 
+#loginbtn {
+	width: 100% !important;
+}
+
 .mainbuttondark:hover,
 .mainbutton:hover {
 	background: rgb(250, 208, 72);
@@ -975,16 +979,38 @@ textarea {
 	border-color: gray;
 }
 
-.contact input {
-	border-bottom: 1px solid rgb(189, 188, 188);
+#fname,
+#lname,
+#email {
+	border-bottom: 1px solid rgb(204, 204, 204);
 	border-top: none;
 	border-left: none;
 	border-right: none;
 	border-radius: 0px !important;
+	background: rgb(43, 43, 63);
+	color: white;
+}
+
+#comment {
+	border: 1px solid rgb(204, 204, 204);
+	border-radius: 7px !important;
+	background: rgb(43, 43, 63);
 }
 
 .contact-form {
 	height: 60vh;
+}
+
+#submitformbtn {
+	font-size: 14px;
+}
+
+.form-bg {
+	padding-top: 10px;
+	padding-bottom: 0px;
+	height: 55vh;
+	border-radius: 7px;
+	background: rgb(43, 43, 63) !important;
 }
 
 a {
@@ -1007,6 +1033,7 @@ a {
 	border-radius: 7px;
 	height: auto;
 	border: 1px solid rgba(182, 182, 182, 0.767);
+	z-index: 6;
 }
 
 #login:target,
@@ -1104,16 +1131,6 @@ a:focus {
 	display: none;
 }
 
-#mapbtn {
-	position: absolute;
-	right: 0%;
-	top: 19.2%;
-	border-radius: 3px;
-	margin: 0px;
-	background: rgba(255, 255, 255, 0.974);
-	padding: 5px 10px;
-}
-
 #searchresults,
 #searchresults_show {
 	position: relative;
@@ -1149,7 +1166,9 @@ a:focus {
 .fa-search,
 .fa-chevron-down,
 .fa-globe,
-.fa-map-marked-alt {
+.fa-map-marked-alt,
+.fa-map-marked,
+.fa-th-list {
 	margin: 0px 0px 0px 8px !important;
 	font-size: 20px;
 	color: rgb(250, 208, 72) !important;
@@ -1612,6 +1631,10 @@ a:focus {
 		font-size: 12px !important;
 		height: 25px;
 		margin: 2px;
+	}
+
+	#buttons button:hover {
+		cursor: pointer;
 	}
 
 	.fa-globe,

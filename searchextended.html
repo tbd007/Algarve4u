@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous"
+  />
+   
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Open+Sans&family=Poppins:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.css"
+  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+  crossorigin="anonymous"
+/>
+  </head>
+  <body>
+
+    <div class="smallheader d-flex-column align-items-start">
+      
+      <div class="navmenu d-flex justify-content-between px-3" id="navbar">
+        
+       
+          <a style="margin-top:-3px"  href="index.html"><img src="./assets/logo.png" height="30"  id="logo" alt="logo"/></a>
+        
+
+        <div class="mid_menu_sub ml-3">
+          <a  href="#"><button type="button" class="det_btn">Last-Minute</button></a>
+          <a  href="#"><button type="button" class="det_btn">Überwinterung</button></a>
+          <a  href="#"><button type="button" class="det_btn">Algarve</button></a>
+        </div>
+
+        <div>
+            <i class="fas fa-bars d-none"></i>  
+            <a href="#login"><button type="button" id="btn_search_log" class="det_btn">Login</button></a>
+            <a href="#popup_contact"><button type="button" class="det_btn">Gastgeber werden</button></a> 
+            <a href="#lang_pop"><label for="language"><i class="fas fa-globe"></i></label>
+            <select name="language" id="lang">
+            </select></a>
+            </div>
+          </div>
+
+        <div class="searchbar_search my-1 mx-1">
+          <input
+          type="text"
+          class="form-control-sm"
+          placeholder="Wohin?"
+        />
+        <input placeholder="Check-in"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" />
+        <input placeholder="Check-out"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+        <input
+          type="text"
+          class="form-control-sm"
+          placeholder="Gäste"
+        />
+        <button id="det_search_btn_mini" type="submit"><i class="fas fa-1x fa-search"></i></button>
+        </div>
+        
+      </div>
+
+      <div class="loginwrap" id="login">
+        <div class="login-form">
+        <div class="main-div">
+          <a class="close_log" href="#">X</a>  
+            <div class="panel">
+               
+              <img src="./assets/logo.png" width="170">
+              <p class="mt-2">Bitte geben Sie Email und Passwort ein</p>
+              </div>
+                <form id="Login">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Passwort">
+                    </div>
+                    <div class="forgot ml-1">
+                    <a style="font-size:13px!important; color:rgb(170, 169, 169)" href="">Passwort vergessen?</a>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="loginbtn" style="width:100%"class="darkbtn">LOGIN</button>
+              </div>
+                </form>
+            </div>
+        </div></div></div>
+    
+<!--SEARCHCONTAINER-->
+
+<div class="searchcontainer" id="searchcontainer">
+
+  <div id="searchresults">
+  
+    <div
+      id="buttons"
+      class="col-12 mx-auto d-flex justify-content-center align-items-center"
+    >
+      <p class="text-white mt-3 mr-3" id="sort">Sortieren nach</p>
+      <button class="mainbuttondark">Beliebtheit</button>
+      <button class="mainbuttondark">Preis aufsteigend</button>
+      <button class="mainbuttondark">Preis absteigend</button>
+      <a href="#popup_filter"><button class="mainbuttondark"><i class="fas fa-sliders-h"></i></button></a>  
+      <a href="search.html"  id="mapbtn"><i class="fas fa-map-marked"></i></a>
+    </div>
+
+   
+
+<div  id="hl_wide">
+
+  <div class="card">
+    <img
+      src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p id="Rating">4.5</p>
+      <div class="ausstattung">
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-swimming-pool"></i>
+        <i class="fas fa-umbrella-beach"></i>
+        <i class="fas fa-parking"></i>
+      </div>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+
+      <div class="bottom">
+        <a href="#" class="mainbuttondark">Details</a>
+        <p id="Price">130€/N</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img
+      src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p id="Rating">4.5</p>
+      <div class="ausstattung">
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-swimming-pool"></i>
+        <i class="fas fa-umbrella-beach"></i>
+        <i class="fas fa-parking"></i>
+      </div>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+
+      <div class="bottom">
+        <a href="#" class="mainbuttondark">Details</a>
+        <p id="Price">130€/N</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img
+      src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p id="Rating">4.5</p>
+      <div class="ausstattung">
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-swimming-pool"></i>
+        <i class="fas fa-umbrella-beach"></i>
+        <i class="fas fa-parking"></i>
+      </div>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+
+      <div class="bottom">
+        <a href="#" class="mainbuttondark">Details</a>
+        <p id="Price">130€/N</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img
+      src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p id="Rating">4.5</p>
+      <div class="ausstattung">
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-swimming-pool"></i>
+        <i class="fas fa-umbrella-beach"></i>
+        <i class="fas fa-parking"></i>
+      </div>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+
+      <div class="bottom">
+        <a href="#" class="mainbuttondark">Details</a>
+        <p id="Price">130€/N</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img
+      src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p id="Rating">4.5</p>
+      <div class="ausstattung">
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-swimming-pool"></i>
+        <i class="fas fa-umbrella-beach"></i>
+        <i class="fas fa-parking"></i>
+      </div>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+
+      <div class="bottom">
+        <a href="#" class="mainbuttondark">Details</a>
+        <p id="Price">130€/N</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img
+      src="https://kroatien-ferienhaus-mieten.de/images/uploads/dsc_5040.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p id="Rating">4.5</p>
+      <div class="ausstattung">
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-swimming-pool"></i>
+        <i class="fas fa-umbrella-beach"></i>
+        <i class="fas fa-parking"></i>
+      </div>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+
+      <div class="bottom">
+        <a href="#" class="mainbuttondark">Details</a>
+        <p id="Price">130€/N</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+<!--SEARCHCONTAINER ENDE-->
+
+
+    <div class="about" id="about_search">
+      
+      <img id="about_img" src="https://sunandsoul.de/wp-content/uploads/2019/04/20190608-PhotoSparks-11.jpg" height="380" width="45%" />
+    
+      <div id="about_us" >
+      
+      <h2>Wir sind für Sie da!</h2>
+      <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+        ipsum dolor sit amet.
+        <br><br>
+        At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+        ipsum dolor sit amet.</p>
+        <a href="#popup_contact"><button class="mainbuttondark">Individuelle Beratung</button></a>
+    </div>
+  </div>
+
+    <div class="footer d-flex row">
+      <div class="flex-column">
+        <li><a>Impressum</a></li>
+        <li><a>Datenschutzerklärung</a></li>
+      </div>
+      <div class="flex-column">
+        <li><a>Buchungen verwalten</a></li>
+        <li><a>Gastgeber werden</a></li>
+      </div>
+      <div class="flex-column">
+        <li><a href="#popup_contact">Kontakt</a></li>
+        <li><a>&copy 2020 Algarve</a></li>
+      </div>
+      <div class="flex-column">
+        <img id="footer_img" src="./assets/logo.png" width="150"/>
+      </div> 
+      </div>
+      
+
+      <!--Filter-->
+
+      <div id="popup_filter" class="pop_overlay">
+
+        <div class="popup col-sm-6" id="filter_pop">
+          <a class="close_form" href="#">X</a>  
+        <h2>Suche Filtern</h2>  
+        <hr>
+
+        <div>
+          <h5>Preis der Unterkunft</h5>
+          <div class="checkbox">
+            <label><input type="checkbox" value=""> 0 - 150</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value=""> 150 - 300</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="" > &gt 300</label>
+          </div>
+        </div>
+        <hr>
+
+        <div class="amenity_filter">
+          <h5>Ausstattung</h5>
+          <div class="d-flex">
+          <div class="mr-5"> 
+          <div class="checkbox">
+            <label><input type="checkbox" value=""> WLAN</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value=""> Föhn</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="" > Self Check-in</label>
+          </div>
+         </div>
+
+         <div>
+          <div class="checkbox">
+            <label><input type="checkbox" value=""> Parkplatz</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value=""> Küche</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value=""> Waschmaschine</label>
+          </div>
+         </div>
+        </div> 
+        </div>
+        <hr>
+        <div>
+          <h5>Betten & Schlafzimmer</h5>
+          <div class="d-flex justify-content-between align-items-center">
+            <p>Betten</p>
+            <div class="d-flex align-items-center justify-content-around">
+              <button class="mainbuttondark mr-2">-</button>
+              <p class="mt-3" style="font-size:18px"> 0 </p>
+              <button class="mainbuttondark ml-2">+</button>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <p>Schlafzimmer</p>
+            <div class="d-flex align-items-center justify-content-around">
+              <button class="mainbuttondark mr-2">-</button>
+              <p class="mt-3" style="font-size:18px"> 0 </p>
+              <button class="mainbuttondark ml-2">+</button>
+            </div>
+          </div>
+        
+        </div>
+        <button class="darkbtn">UNTERKÜNFTE ANZEIGEN</button>
+         
+        </div>
+            
+           
+                     
+      </div>
+
+     <!--Language select-->
+     <div class="lang_wrap " id="lang_pop">
+        <div class=" main-div d-flex justify-content-center align-items-center"> 
+          <a class="close_log" href="#">X</a> 
+          <h5>Sprache wählen</h5>
+          <ul class=" picklang mr-5">
+            <li class="selected_lang">DEUTSCH</li>
+            <hr>
+            <li>ENGLISH</li>
+            <hr>
+            <li>PORTUGUES</li>
+          </ul>  
+          
+        </div></div>  
+
+      <!--Contactform-->
+
+      <div id="popup_contact" class="pop_overlay">
+
+        <div class="popup col-sm-6" id="cpop">
+          <div class="contact-info ml-3 mb-3">
+            <a class="close_form" href="#">X</a>
+            <img src="./assets/logo.png" alt="image" width="170" class="mb-4"/>
+            <h2>KONTAKTIEREN SIE UNS</h2>
+            <h4>Sie haben Fragen oder wünschen eine individuelle Beratung - Kontaktieren Sie uns!</h4>
+
+            <div id="phone">
+            <i class="fa fa-phone mr-2 mt-1" style="color:rgb(280, 208, 72)"></i><a href=""><p style="color:rgb(280, 208, 72); font-weight:600!important; font-size:20px;">+49 909 99 99</p></a>
+            </div>
+            </div>
+            
+           
+              <div class="contact-form ">
+                <div class="form-group">
+                  <div class="col-sm-12">          
+                  <input type="text" class="form-control" id="fname" placeholder="Vornamen eingeben" name="fname">
+                  </div>
+                </div>
+                <div class="form-group">
+                 
+                  <div class="col-sm-12">          
+                  <input type="text" class="form-control" id="lname" placeholder="Nachnamen eingeben" name="lname">
+                  </div>
+                </div>
+                <div class="form-group">
+                 
+                  <div class="col-sm-12">
+                  <input type="email" class="form-control" id="email" placeholder="Ihre Email Adresse" name="email">
+                  </div>
+                </div>
+                <div class="form-group">
+                 
+                  <div class="col-sm-12">
+                  <textarea class="form-control" rows="5" id="comment" placeholder="Ihre Nachricht"></textarea>
+                  </div>
+                  <button type="submit" id="submitformbtn" class="darkbtn ml-3 mt-3">SENDEN</button>
+                </div>
+
+            </div>         
+    
+
+
+
+     
+
+        
+
+      
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
