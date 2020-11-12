@@ -1468,6 +1468,19 @@ a:focus {
 
 	#det_search_btn {
 		margin-top: 5px !important;
+		font-size: 16px;
+	}
+
+	#det_search_btn_mini,
+	#det_search_btn_mini > i {
+		margin-top: -2px !important;
+		font-size: 14px !important;
+		border: none;
+		background: transparent;
+	}
+
+	.det_btn {
+		display: none;
 	}
 
 	.smallheader_main {
@@ -1480,8 +1493,8 @@ a:focus {
 		display: block;
 		color: rgb(250, 208, 72);
 		margin-right: 7px;
-		margin-top: 5px;
-		font-size: 20px;
+		margin-top: 3px;
+		font-size: 19px;
 	}
 
 	.mid_menu,
@@ -1773,7 +1786,7 @@ a:focus {
 	}
 
 	#navbar {
-		min-width: 100vw !important;
+		width: 100vw !important;
 		padding: 0px !important;
 		overflow-x: hidden;
 	}
@@ -1851,6 +1864,10 @@ a:focus {
 	#about_search,
 	#about_img {
 		width: 100vw !important;
+	}
+
+	.smallheader {
+		padding: 0px 7px !important;
 	}
 
 	html,
@@ -2052,6 +2069,10 @@ a:focus {
 	i,
 	.det_btn {
 		font-size: 14px;
+	}
+
+	.fa-globe {
+		display: none !important;
 	}
 
 	h2 {

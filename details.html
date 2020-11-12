@@ -51,15 +51,14 @@
       </div>
 
       <div>
-      <a href="#login"><button type="button" id="btn_search_log" class="det_btn">Login</button></a>
-      <a href="#contactform"><button type="button" class="det_btn">Gastgeber werden</button></a> 
-      <label for="language"><i class="fas fa-globe"></i></label>
-      <select name="language" id="lang">
-        <option value="DE">DE</option><hr>
-        <option value="EN">EN</option>
-      </select>
+        <i class="fas fa-bars"></i>  
+        <a href="#login"><button type="button" id="btn_search_log" class="det_btn">Login</button></a>
+        <a href="#popup_contact"><button type="button" class="det_btn">Gastgeber werden</button></a> 
+        <a href="#lang_pop"><label for="language"><i class="fas fa-globe"></i></label>
+        <select name="language" id="lang">
+        </select></a>
+        </div>
       </div>
-    </div>
 
       <div class="searchbar_search my-1 mx-2">
         <input
@@ -74,7 +73,7 @@
         class="form-control-sm"
         placeholder="Gäste"
       />
-      <button id="det_search_btn" type="submit"><i class="fas fa-1x fa-search"></i></button>
+      <button id="det_search_btn_mini"  type="submit"><i class="fas fa-1x fa-search"></i></button>
       </div>
 
 
@@ -603,6 +602,22 @@
           </div>
         </div>
       </div>
+
+
+      <!--Language select-->
+      <div class="lang_wrap " id="lang_pop">
+        <div class=" main-div d-flex justify-content-center align-items-center"> 
+          <a class="close_log" href="#">X</a> 
+          <h5>Sprache wählen</h5>
+          <ul class=" picklang mr-5">
+            <li class="selected_lang">DEUTSCH</li>
+            <hr>
+            <li>ENGLISH</li>
+            <hr>
+            <li>PORTUGUES</li>
+          </ul>  
+          
+        </div></div>  
 
       <!--Contactform-->
 

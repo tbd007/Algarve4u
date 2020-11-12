@@ -49,11 +49,10 @@
         <div class="mainheadnav">
           <i class="fas fa-bars"></i>
           <a id="loginbtn" href="#login"><button type="button" class="det_btn">Login</button></a>
-          <a href="#contactform"><button id="hostbtn" type="button" class="det_btn">Gastgeber werden</button></a>
-          <label id="lab" for="language"><i class="fas fa-globe"></i></label>
+          <a href="#popup_contact"><button type="button" class="det_btn">Gastgeber werden</button></a> 
+          <a href="#lang_pop"><label for="language"><i class="fas fa-globe"></i></label>
             <select name="language" id="lang">
-              <option value="DE">DE</option><hr>
-              <option value="EN">EN</option>
+             
             </select>
          
         </div>
@@ -313,8 +312,22 @@
       </div>  
       </div>
 
+      <!--Language select-->
+      <div class="lang_wrap " id="lang_pop">
+        <div class=" main-div d-flex justify-content-center align-items-center"> 
+          <a class="close_log" href="#">X</a> 
+          <h5>Sprache wählen</h5>
+          <ul class=" picklang mr-5">
+            <li class="selected_lang">DEUTSCH</li>
+            <hr>
+            <li>ENGLISH</li>
+            <hr>
+            <li>PORTUGUES</li>
+          </ul>  
+          
+        </div></div>  
 
-  <!--CONTACT-->
+       <!--CONTACT-->
 
       <div id="popup_contact" class="pop_overlay">
 
