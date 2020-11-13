@@ -804,6 +804,21 @@ label {
 	opacity: 0;
 	border-radius: 7px;
 }
+
+.pop_overlay_mob {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgb(255, 255, 255);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+	border-radius: 7px;
+	padding: 0px;
+	height: 50vh !important;
+}
+
 .pop_overlay:target {
 	visibility: visible;
 	opacity: 1;
@@ -821,14 +836,15 @@ label {
 	position: relative;
 	transition: all 2s ease-in-out;
 	z-index: 5;
-	border: 1px solid rgba(182, 182, 182, 0.767);
+	border: 1px solid rgba(218, 218, 218, 0.425);
 }
 
 #cpop {
 	background: rgb(43, 43, 63) !important;
-	height: auto !important;
+	height: 90vh !important;
 	padding-top: 20px !important;
 	overflow-y: hidden;
+	border: 1px solid rgba(218, 218, 218, 0.425);
 }
 
 .popup h2 {
@@ -1038,7 +1054,7 @@ a {
 	opacity: 0;
 	border-radius: 7px;
 	height: auto;
-	border: 1px solid rgba(182, 182, 182, 0.767);
+	border: 1px solid rgba(218, 218, 218, 0.425);
 	z-index: 6;
 }
 
@@ -1090,7 +1106,7 @@ a {
 	max-width: 30%;
 	padding: 40px 60px 30px 61px;
 	position: relative;
-	border: 1px solid rgb(190, 190, 190);
+	border: 1px solid rgba(218, 218, 218, 0.425);
 }
 
 .login-form .form-group {
@@ -1161,7 +1177,7 @@ a:focus {
 	justify-content: center;
 	padding-top: 25px !important;
 	padding-bottom: 15px !important;
-	border-bottom: 1px solid rgb(207, 207, 207) !important;
+	border: 1px solid rgba(218, 218, 218, 0.425) !important;
 }
 
 #navbar_back {
@@ -1474,9 +1490,11 @@ a:focus {
 	color: rgb(250, 208, 72);
 }
 
-.fa-bars {
-	display: none;
+.fa-bars,
+.changesearch {
+	display: none !important;
 }
+
 /* QUERIES */
 @media (min-width: 768px) {
 	.portlet {
@@ -1524,8 +1542,13 @@ a:focus {
 		display: block !important;
 		color: rgb(250, 208, 72);
 		margin-right: 7px;
-		margin-top: 16px !important;
-		font-size: 22px;
+		margin-top: 18px !important;
+		font-size: 24px;
+	}
+
+	.changesearch {
+		display: block !important;
+		margin-left: 7px;
 	}
 
 	.mid_menu,
@@ -1832,6 +1855,17 @@ a:focus {
 		width: 100vw !important;
 		padding: 0px 10px 0px 0px !important;
 		overflow-x: hidden;
+	}
+
+	#cpop {
+		height: auto !important;
+		position: absolute;
+		top: 0;
+		margin-top: 0 !important;
+	}
+
+	.contact-info {
+		margin-bottom: 0px !important;
 	}
 
 	#loginbtn {
