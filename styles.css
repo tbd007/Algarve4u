@@ -1543,8 +1543,8 @@ a:focus {
 
 	.fa-bars {
 		display: block !important;
-		position: absolute;
-		top: 1%;
+		position: fixed;
+		top: 3.8%;
 		right: 4%;
 		color: rgb(250, 208, 72);
 		font-size: 22px;
@@ -1553,10 +1553,11 @@ a:focus {
 	#main_bars {
 		right: 4% !important;
 		top: 40% !important;
+		position: absolute !important;
 	}
 
 	.bars-back {
-		top: 2% !important;
+		top: 3.5% !important;
 	}
 
 	.changesearch {
