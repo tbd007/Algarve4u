@@ -1559,6 +1559,8 @@ a:focus {
 		right: 4% !important;
 		top: 40% !important;
 		position: absolute !important;
+		box-shadow: none;
+		border: none;
 	}
 
 	.bars-back {
