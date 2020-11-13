@@ -2087,6 +2087,16 @@ a:focus {
 		grid-gap: 7px;
 	}
 
+	#hostimg {
+		border-radius: 90px;
+		height: 50px;
+		width: 50px;
+		margin-top: 15px;
+		object-fit: cover;
+		margin-left: 50px;
+		border: 1px solid rgb(215, 210, 248);
+	}
+
 	.det_wrap {
 		width: 100%;
 	}
