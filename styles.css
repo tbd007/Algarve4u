@@ -1513,7 +1513,7 @@ a:focus {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 	body,
 	.smallheader_main {
 		width: 99vw !important;
@@ -1547,9 +1547,6 @@ a:focus {
 
 	.fa-bars {
 		display: block !important;
-		position: fixed;
-		top: 3%;
-		right: 4%;
 		color: rgb(250, 208, 72);
 		font-size: 22px;
 		border: 1px solid rgba(209, 209, 209, 0.281);
@@ -1557,6 +1554,10 @@ a:focus {
 		box-shadow: inset -2px 2px 20px rgb(255, 254, 254),
 			inset 2px -2px 10px rgb(230, 230, 230);
 		padding: 3px 5px;
+	}
+
+	.menu_right {
+		display: none;
 	}
 
 	#main_bars {
@@ -1593,7 +1594,7 @@ a:focus {
 	}
 
 	#logo_home {
-		width: 130px !important;
+		width: 120px !important;
 		height: auto !important;
 		margin-top: 14px !important;
 		margin-right: 5px !important;
@@ -1879,7 +1880,7 @@ a:focus {
 
 	#navbar {
 		width: 100vw !important;
-		padding: 10px 10px 0px 0px !important;
+		padding: 0px 10px 0px 0px !important;
 		overflow-x: hidden;
 		height: auto !important;
 		align-items: center;
@@ -2001,6 +2002,10 @@ a:focus {
 	.smallheader_back {
 		padding: 3px !important;
 		min-height: 70px !important;
+	}
+
+	.smallheader_back {
+		display: none;
 	}
 
 	.searchbar_search {
@@ -2200,7 +2205,7 @@ a:focus {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	body,
 	html {
 		overflow-x: hidden !important;
@@ -2274,7 +2279,7 @@ a:focus {
 	}
 
 	#logo {
-		width: 130px !important;
+		width: 120px !important;
 		height: auto;
 		margin-left: 10px;
 	}
@@ -2329,6 +2334,10 @@ a:focus {
 		width: 100% !important;
 		margin: 10px auto !important;
 	}
+
+	#houselist {
+		margin-bottom: 70px;
+	}
 }
 
 @media screen and (min-width: 540px) {
@@ -2357,5 +2366,37 @@ a:focus {
 
 	body {
 		min-height: 100vh;
+	}
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	#usp,
+	#usp div {
+		flex-direction: row !important;
+		align-items: center !important;
+		justify-content: center;
+	}
+
+	.fa-globe {
+		display: none !important;
+	}
+
+	.fa-bars {
+		margin-top: -10px !important;
+	}
+	#logo {
+		margin-left: 10px !important;
+	}
+
+	.card-result .card-img-top {
+		height: 400px !important;
+	}
+
+	.resultmap {
+		display: none;
+	}
+
+	#houselist {
+		margin-bottom: 70px !important;
 	}
 }
