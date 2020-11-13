@@ -1524,7 +1524,7 @@ a:focus {
 		display: block !important;
 		color: rgb(250, 208, 72);
 		margin-right: 7px;
-		margin-top: 5px !important;
+		margin-top: 14px !important;
 		font-size: 22px;
 	}
 
@@ -2185,7 +2185,7 @@ a:focus {
 	#logo {
 		width: 120px !important;
 		height: auto;
-		margin-top: 5px;
+		margin-top: 10px;
 		margin-left: 7px;
 	}
 
