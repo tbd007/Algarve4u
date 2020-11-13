@@ -1541,7 +1541,7 @@ a:focus {
 
 	.smallheader_main {
 		padding: 5px 10px !important;
-		height: 40px !important;
+		height: 50px !important;
 		margin-top: -7px !important;
 	}
 
@@ -1562,7 +1562,7 @@ a:focus {
 
 	#main_bars {
 		right: 4% !important;
-		top: 40% !important;
+		top: 35% !important;
 		position: absolute !important;
 		box-shadow: none;
 		border: none;
@@ -1594,9 +1594,9 @@ a:focus {
 	}
 
 	#logo_home {
-		width: 120px !important;
+		width: 140px !important;
 		height: auto !important;
-		margin-top: 14px !important;
+		margin-top: 16px !important;
 		margin-right: 5px !important;
 		margin-left: 10px;
 	}
