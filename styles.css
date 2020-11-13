@@ -2338,6 +2338,13 @@ a:focus {
 	#houselist {
 		margin-bottom: 70px;
 	}
+	#cpop,
+	.popup {
+		height: 101vh !important;
+	}
+	.contact-info {
+		margin-bottom: 10px !important;
+	}
 }
 
 @media screen and (min-width: 540px) {
@@ -2447,6 +2454,19 @@ a:focus {
 	}
 
 	#about_img {
-		height: 350px !important;
+		height: auto !important;
+		width: 90% !important;
+		margin: 0 auto;
+		margin-left: 20px !important;
+	}
+	.pop_overlay {
+		display: flex;
+		justify-content: center;
+	}
+
+	#cpop,
+	.popup {
+		height: 70vh !important;
+		margin-top: 10% !important;
 	}
 }
