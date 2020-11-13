@@ -1502,6 +1502,10 @@ a:focus {
 	display: none !important;
 }
 
+#booking_msg {
+	height: 100px !important;
+}
+
 /* QUERIES */
 @media (min-width: 768px) {
 	.portlet {
@@ -1888,6 +1892,13 @@ a:focus {
 		margin-top: 0 !important;
 	}
 
+	.pop_form {
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 1fr;
+		grid-gap: 7px;
+	}
+
 	.contact-info {
 		margin-bottom: 0px !important;
 	}
@@ -2160,6 +2171,22 @@ a:focus {
 
 	.paymentoptions input {
 		width: auto !important;
+	}
+
+	.pop_form input,
+	.paymentoptions {
+		width: 100% !important;
+	}
+
+	#exp_month,
+	#exp_year,
+	#booking_msg {
+		border: 1px solid gray;
+		box-shadow: 2px 1px 5px rgb(216, 216, 219);
+	}
+
+	#booking_msg {
+		height: 100px !important;
 	}
 }
 
