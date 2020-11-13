@@ -36,7 +36,7 @@
       <div class="navmenu d-flex justify-content-between px-3" id="navbar">
         
        
-          <a style="margin-top:-3px"  href="index.html"><img src="./assets/logo.png" height="30"  id="logo" alt="logo"/></a>
+          <a  href="index.html"><img src="./assets/logo.png" height="30"  id="logo" alt="logo"/></a>
         
 
         <div class="mid_menu_sub ml-3">
@@ -46,7 +46,7 @@
         </div>
 
         <div>
-        <i class="fas fa-bars d-none"></i>  
+        <i class="fas fa-bars"></i>  
         <button type="button" id="btn_search_log" class="det_btn"><a href="#login">Login</a></button>
         <a href="#popup_contact"><button type="button" class="det_btn">Gastgeber werden</button></a> 
         <a href="#lang_pop"><label for="language"><i class="fas fa-globe"></i></label>
@@ -99,12 +99,36 @@
             </div>
         </div></div></div>
 
+
+        <div class="pop_overlay" id="mobilesearch">
+          <a class="close_form" href="#">X</a>  
+          <div class="searchbar d-flex align-items-center justify-content-center mt-3 py-1">
+            
+            <form>
+            <input
+              type="text"
+              class="form-control-sm"
+              placeholder="Wo soll es hingehen?"
+            />
+            <input placeholder="Check-in"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" />
+            <input placeholder="Check-out"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+            <input
+              type="text"
+              class="form-control-sm"
+              placeholder="Anzahl der Gäste"
+            />
+            <a href="search.html"><button id="det_search_btn" type="submit"><i class="fas fa-1x fa-search"></i></button></a>
+          </form>
+          </div>
+        </div>
+
 <!--MAINCONTAINER-->
     <div class="maincontainer" id="maincontainer">
-      
+     
       <!--SUCHERGEBNISSE-->
       <div id="searchresults">
-       
+        <a href="#mobilesearch" class="ml-3">Suche ändern</a>  
+
         <div
           id="buttons"
           class="col-12 mx-auto d-flex justify-content-center align-items-center"
@@ -394,7 +418,7 @@
 
         <div class="popup col-sm-6" id="filter_pop">
           <a class="close_form" href="#">X</a>  
-        <h2>Suche Filtern</h2>  
+        <h2 class="mt-3">Suche Filtern</h2>  
         <hr>
 
         <div>
@@ -413,7 +437,7 @@
 
         <div class="amenity_filter">
           <h5>Ausstattung</h5>
-          <div class="d-flex">
+          <div class="d-flex"  id="amenitycheck" >
           <div class="mr-5"> 
           <div class="checkbox">
             <label><input type="checkbox" value=""> WLAN</label>
@@ -461,7 +485,7 @@
           </div>
         
         </div>
-        <button class="darkbtn">UNTERKÜNFTE ANZEIGEN</button>
+        <button class="darkbtn" id="filterbtn">UNTERKÜNFTE ANZEIGEN</button>
          
         </div>
             
