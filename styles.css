@@ -476,7 +476,7 @@ h3 {
 	align-items: center;
 	justify-content: center;
 	padding-top: 13px !important;
-	border-bottom: 1px solid rgb(207, 207, 207) !important;
+	border: none !important;
 }
 
 .smallheader_main {
@@ -1188,6 +1188,9 @@ a:focus {
 
 #backcontainer {
 	min-height: 70vh;
+	height: auto !important;
+	margin-bottom: 70px;
+	overflow-x: hidden;
 }
 
 .fa-search,
@@ -1540,10 +1543,15 @@ a:focus {
 
 	.fa-bars {
 		display: block !important;
+		position: absolute;
+		top: 1%;
+		right: 4%;
 		color: rgb(250, 208, 72);
-		margin-right: 7px;
-		margin-top: 18px !important;
 		font-size: 24px;
+	}
+
+	.bars-back {
+		top: 2.2% !important;
 	}
 
 	.changesearch {
@@ -1965,7 +1973,7 @@ a:focus {
 	.smallheader,
 	.smallheader_back {
 		padding: 3px !important;
-		height: 7% !important;
+		min-height: 70px !important;
 	}
 
 	.searchbar_search {
@@ -2215,8 +2223,11 @@ a:focus {
 	#logo {
 		width: 130px !important;
 		height: auto;
-		margin-top: 15px !important;
-		margin-left: 7px;
+		margin-left: 10px;
+	}
+
+	.logoback {
+		margin-left: -5px !important;
 	}
 
 	.col-md-4,
@@ -2250,11 +2261,15 @@ a:focus {
 	}
 
 	.nav-tabs > li > a {
-		font-size: 10px !important;
+		font-size: 16px !important;
+	}
+
+	.nav-tabs > li {
+		width: 100% !important;
 	}
 
 	.badge {
-		font-size: 10px !important;
+		font-size: 14px !important;
 	}
 
 	#save-btn {
