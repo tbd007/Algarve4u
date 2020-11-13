@@ -1582,9 +1582,9 @@ a:focus {
 
 	#logo_home {
 		width: 130px !important;
-		height: auto;
-		margin-top: 10.5px !important;
-		margin-right: 10px;
+		height: auto !important;
+		margin-top: 13.5px !important;
+		margin-right: 12px;
 		margin-left: 5px;
 	}
 
