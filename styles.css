@@ -1186,6 +1186,10 @@ a:focus {
 	width: 100%;
 }
 
+#backcontainer {
+	min-height: 70vh;
+}
+
 .fa-search,
 .fa-chevron-down,
 .fa-globe,
@@ -1509,10 +1513,6 @@ a:focus {
 		overflow: hidden !important;
 		margin: 0px;
 		height: auto;
-	}
-
-	.smallheader .fa-bars {
-		color: rgb(122, 122, 122) !important;
 	}
 
 	#det_search_btn {
@@ -1962,7 +1962,8 @@ a:focus {
 		width: 100vw !important;
 	}
 
-	.smallheader {
+	.smallheader,
+	.smallheader_back {
 		padding: 3px !important;
 		height: 7% !important;
 	}
