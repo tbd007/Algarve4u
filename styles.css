@@ -34,9 +34,8 @@ option {
 	outline: none;
 }
 
-a {
-	color: rgb(44, 52, 94) !important;
-	font-size: 15px !important;
+nav {
+	display: none !important;
 }
 
 header {
@@ -1545,31 +1544,28 @@ a:focus {
 		margin-top: -7px !important;
 	}
 
-	.fa-bars {
-		display: block !important;
-		color: rgb(250, 208, 72);
-		font-size: 22px;
-		border: 1px solid rgba(209, 209, 209, 0.281);
-		border-radius: 7px;
-		box-shadow: inset -2px 2px 20px rgb(255, 254, 254),
-			inset 2px -2px 10px rgb(230, 230, 230);
-		padding: 3px 5px;
+	.smallheader,
+	.smallheader_back,
+	.smallheader_main {
+		display: none;
+	}
+
+	.navbar {
+		background: rgb(223, 223, 223) !important;
+	}
+
+	.nav-link {
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 600 !important;
+	}
+
+	.nav-link:hover {
+		color: rgb(250, 208, 72) !important;
 	}
 
 	.menu_right {
 		display: none;
-	}
-
-	#main_bars {
-		right: 2% !important;
-		top: 35% !important;
-		position: absolute !important;
-		box-shadow: none;
-		border: none;
-	}
-
-	.bars-back {
-		top: 3.5% !important;
 	}
 
 	.changesearch {
@@ -1676,22 +1672,6 @@ a:focus {
 	.overlay > h4 {
 		font-size: 13px !important;
 		width: 85%;
-	}
-
-	.navmenu {
-		top: 0%;
-		right: 3%;
-	}
-
-	.det_btn {
-		font-size: 14px !important;
-	}
-
-	.navmenu > button,
-	#buttons > button {
-		font-size: 12px !important;
-		height: 25px;
-		margin: 2px;
 	}
 
 	#buttons button:hover {
@@ -1986,6 +1966,10 @@ a:focus {
 		margin-left: 0px;
 	}
 
+	.navbar {
+		display: flex !important;
+	}
+
 	#searchresults,
 	#houselist,
 	.card-result,
@@ -1996,16 +1980,6 @@ a:focus {
 	#about_search,
 	#about_img {
 		width: 100vw !important;
-	}
-
-	.smallheader,
-	.smallheader_back {
-		padding: 3px !important;
-		min-height: 70px !important;
-	}
-
-	.smallheader_back {
-		display: none;
 	}
 
 	.searchbar_search {
@@ -2389,15 +2363,14 @@ a:focus {
 		text-align: center;
 	}
 
-	.fa-globe {
-		display: none !important;
+	.navbar {
+		display: flex;
 	}
 
-	.fa-bars {
-		margin-top: -10px !important;
-	}
-	#logo {
-		margin-left: 10px !important;
+	.smallheader,
+	.smallheader_back,
+	.smallheader_main {
+		display: none;
 	}
 
 	.card-result .card-img-top {
