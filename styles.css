@@ -554,9 +554,11 @@ h3 {
 	color: rgb(66, 61, 99);
 }
 
-.det_btn {
+.det_btn,
+a {
 	border: none;
 	background: none;
+	font-size: 16px;
 }
 
 .det_btn:hover {
@@ -840,7 +842,7 @@ label {
 
 #cpop {
 	background: rgb(43, 43, 63) !important;
-	height: 90vh !important;
+	height: 100vh !important;
 	padding-top: 20px !important;
 	overflow-y: hidden;
 	border: 1px solid rgba(218, 218, 218, 0.425);
@@ -922,19 +924,6 @@ textarea {
 
 /*Contact*/
 
-.contact {
-	padding: 0% !important;
-	height: 70vh !important;
-	visibility: hidden;
-	position: absolute;
-	top: 10%;
-	bottom: 0%;
-	left: 0;
-	right: 0;
-	opacity: 0;
-	border-radius: 7px !important;
-}
-
 .close_form,
 .close_log,
 .popup .close {
@@ -950,10 +939,6 @@ textarea {
 	border-radius: 7px;
 }
 
-.contact:target {
-	visibility: visible;
-	opacity: 1;
-}
 .col-md-4 {
 	background: rgb(43, 43, 63);
 	padding: 5%;

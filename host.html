@@ -71,9 +71,9 @@
           </div>
   
           <div>
-          <i class="fas fa-bars bars-back"></i>      
+         
           <a href="index.html"><button type="button" class="det_btn">Logout</button></a>
-          <a href="#contactform"><button type="button" class="det_btn">Kontakt</button></a>
+          <a href="#popup_contact"><button type="button" class="det_btn">Kontakt</button></a>
           <a href="#lang_pop"><label for="language"><i class="fas fa-globe"></i></label>
             <select name="language" id="lang">
             </select></a>
@@ -224,7 +224,7 @@
           <li><a>Gastgeber werden</a></li>
         </div>
         <div class="flex-column">
-          <li><a href="#contactform">Kontakt</a></li>
+          <li><a href="#popup_contact">Kontakt</a></li>
           <li><a>&copy 2020 Algarve</a></li>
         </div>
         <div class="flex-column">
@@ -343,58 +343,83 @@
   </div></div>  
 
       <!--Contactform-->  
-      <div class="container contact" id="contactform">
-        
-        <div class="row">
-          
-          <div class="col-md-4">
-            <div class="contact-info">
-              <a class="close_form" href="#">X</a>
-              <img src="./assets/logo.png" alt="image" width="170"/>
-              <h2>KONTAKTIEREN SIE UNS</h2>
-              <h4>Sie haben Fragen oder wünschen eine individuelle Beratung - Kontaktieren Sie uns!</h4>
-              <div id="phone">
-              <i class="fa fa-phone mr-2 mt-1" style="color:rgb(280, 208, 72)"></i><a href=""><p style="color:rgb(280, 208, 72); font-weight:600!important; font-size:20px;">+49 909 99 99</p></a>
-              </div>
-            </div>
-          </div>
+      <div id="popup_contact" class="pop_overlay">
+				<div class="popup col-sm-6" id="cpop">
+					<div class="contact-info ml-3 mb-5 mt-3">
+						<a class="close_form" href="#">X</a>
+						<img src="./assets/logo.png" alt="image" width="170" class="mb-4" />
+						<h2>KONTAKTIEREN SIE UNS</h2>
+						<h4>
+							Sie haben Fragen oder wünschen eine individuelle Beratung -
+							Kontaktieren Sie uns!
+						</h4>
 
-          <div class="col-md-8">
-            <div class="contact-form ">
-              
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="fname">Vorname:</label>
-                <div class="col-sm-10">          
-                <input type="text" class="form-control" id="fname" placeholder="Vornamen eingeben" name="fname">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="lname">Nachname:</label>
-                <div class="col-sm-10">          
-                <input type="text" class="form-control" id="lname" placeholder="Nachnamen eingeben" name="lname">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Email:</label>
-                <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="Ihre Email Adresse" name="email">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="comment">Nachricht:</label>
-                <div class="col-sm-10">
-                <textarea class="form-control" rows="4" id="comment"></textarea>
-                </div>
-              </div>
-              <div class="form-group">        
-                <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="darkbtn">SENDEN</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+						<div id="phone">
+							<i
+								class="fa fa-phone mr-2 mt-1"
+								style="color: rgb(280, 208, 72)"
+							></i
+							><a href=""
+								><p
+									style="
+										color: rgb(280, 208, 72);
+										font-weight: 600 !important;
+										font-size: 20px;
+									"
+								>
+									+49 909 99 99
+								</p></a
+							>
+						</div>
+					</div>
+
+					<div class="contact-form">
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input
+									type="text"
+									class="form-control"
+									id="fname"
+									placeholder="Vornamen eingeben"
+									name="fname"
+								/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input
+									type="text"
+									class="form-control"
+									id="lname"
+									placeholder="Nachnamen eingeben"
+									name="lname"
+								/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input
+									type="email"
+									class="form-control"
+									id="email"
+									placeholder="Ihre Email Adresse"
+									name="email"
+								/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<textarea
+									class="form-control"
+									rows="5"
+									id="comment"
+									placeholder="Ihre Nachricht"
+								></textarea>
+							</div>
+							<button type="submit" class="darkbtn ml-3 mt-3">SENDEN</button>
+						</div>
+					</div>
+				</div>
 
       <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
